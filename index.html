@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirage de Cartes Aléatoires</title>
+    <link rel="stylesheet" href="joliture.css">
+    <script src="tirage.js"></script>
+</head>
+<body>
+    <h1>Tirage de Cartes à Raconter</h1>
+
+    <div id="formTirage">
+        <label for="choixFichierJson">Univers&nbsp;:</label>
+        <select id="choixFichierJson">
+            <option value="scifi.json" selected>Science-Fiction</option>
+            <option value="steampunk.json">Steampunk</option>
+        </select>
+
+        <label for="nombreDePersonnes">Participants&nbsp;:</label>
+        <input type="number" id="nombreDePersonnes" min="1" value="1">
+
+        <div id="noms">
+            <!-- Les champs de saisie pour les prénoms seront ajoutés ici dynamiquement -->
+        </div>
+
+        <button onclick="tirerCartes()">Tirer les Cartes</button>
+    </div>
+
+    <div id="result">
+        <div class="participant-block">
+            <table>
+                <tr>
+                    <th>Participant&nbsp;:</th>
+                    <th>Personnage&nbsp;:</th>
+                    <th>Aspect&nbsp;:</th>
+                </tr>
+                <tr>
+                    <td>${prenoms[i]}</td>
+                    <td>${cartesTirees[i][0]}</td> <!-- Carte Personnage -->
+                    <td>${cartesTirees[i][1]}</td> <!-- Carte Aspect -->
+                </tr>
+                <tr>
+                    <th>Objet&nbsp;:</th>
+                    <th>Lieu&nbsp;:</th>
+                    <th>Événement&nbsp;:</th>
+                </tr>
+                <tr>
+                    <td>${cartesTirees[i][4]}</td> <!-- Carte Objet -->
+                    <td>${cartesTirees[i][2]}</td> <!-- Carte Lieu -->
+                    <td>${cartesTirees[i][3]}</td> <!-- Carte Événement -->
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>La Fin de l'histoire&nbsp;:</th>
+                </tr>
+                <tr>
+                    <td>${cartesTirees[i][5]}</td> <!-- Carte Fin d'histoire -->
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <button id="reboot" onclick="reinitialiserPage()">Recommencer</button>
+
+    <script>
+        // Fonction pour ajouter dynamiquement les champs de saisie des prénoms
+        function ajouterChampsPrenom() {
+            const nombreDePersonnes = document.getElementById('nombreDePersonnes').value;
+            const nomsDiv = document.getElementById('noms');
+            nomsDiv.innerHTML = ''; // Effacer les champs précédents
+
+            for (let i = 0; i < nombreDePersonnes; i++) {
+                const input = document.createElement('input');
+                input.type = 'text';
+                input.placeholder = `Prénom de la personne ${i + 1}`;
+                input.className = 'prenom-input';
+                nomsDiv.appendChild(input);
+            }
+        }
+
+        // Appeler la fonction pour créer les champs de saisie lors du chargement de la page
+        ajouterChampsPrenom();
+
+        // Mettre à jour les champs de saisie lorsqu'on change le nombre de personnes
+        document.getElementById('nombreDePersonnes').addEventListener('input', ajouterChampsPrenom);
+    </script>
+</body>
+</html>

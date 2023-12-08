@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#reboot {
+    margin: 10px auto;
+    display: none;
+}
+
+/* Style pour les champs de saisie des prénoms */
+.prenom-input {
+    margin: 5px;
+    padding: 5px;
+}
+
+#result {
+    display: none;
+    width: 80%;
+    margin: 0 auto; /* Centre horizontalement */
+  }
+  
+  .participant-block {
+    text-align: center; /* Centre le contenu des cellules */
+  }
+  
+  table {
+    width: 100%; /* Remplit la largeur de la div parente */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+  }
+  
+  th, td {
+    padding: 10px; /* Ajoute un espace autour du contenu des cellules */
+    border: 1px solid #ddd; /* Ajoute une bordure légère entre les cellules */
+  }
+  

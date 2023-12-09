@@ -14,7 +14,7 @@
         <label for="choixFichierJson">Univers&nbsp;:</label>
         <select id="choixFichierJson">
             <option value="originales.json" selected>Contes de Fées</option>
-            <option value="scifi.json" selected>Science-Fiction</option>
+            <option value="scifi.json">Science-Fiction</option>
             <option value="steampunk.json">Steampunk</option>
         </select>
 
@@ -32,7 +32,7 @@
         <div class="participant-block">
             <table>
                 <tr>
-                    <th>Participant&nbsp;:</th>
+                    <th><img class="pictos" src="svg/participant_01.svg" alt="Participant"></th>
                     <th>Personnage&nbsp;:</th>
                     <th>Aspect&nbsp;:</th>
                 </tr>
@@ -64,6 +64,7 @@
     </div>
 
     <button id="reboot" onclick="reinitialiserPage()">Recommencer</button>
+    <button id="goMail" onclick="envoyerMail()">Envoyer les résultats</button>
 
     <script>
         // Fonction pour ajouter dynamiquement les champs de saisie des prénoms
@@ -75,7 +76,7 @@
             for (let i = 0; i < nombreDePersonnes; i++) {
                 const input = document.createElement('input');
                 input.type = 'text';
-                input.placeholder = `Prénom de la personne ${i + 1}`;
+                input.placeholder = `Prénom du participant n°${i + 1}`;
                 input.className = 'prenom-input';
                 nomsDiv.appendChild(input);
             }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Pictos_Cartes_à_Histoires" data-name="Pictos Cartes à Histoires" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Lieu_03" data-name="Lieu 03">
+    <polygon class="cls-1" points="19.83 3.4 12.17 5.59 12.17 28.6 19.83 26.41 19.83 3.4"/>
+    <path class="cls-1" d="M30.82,5.82l-9.72-2.43v23l9.41,2.35c.05.01.1.02.15.02.14,0,.28-.05.39-.13.15-.12.24-.31.24-.5V6.43c0-.29-.2-.55-.48-.62Z"/>
+    <path class="cls-1" d="M10.9,5.62L1.49,3.26c-.19-.05-.39,0-.55.12s-.24.31-.24.5v21.68c0,.29.2.55.48.62l9.72,2.43V5.62Z"/>
+  </g>
+</svg>

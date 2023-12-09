@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Pictos_Cartes_à_Histoires" data-name="Pictos Cartes à Histoires" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Fin_Histoire_01" data-name="Fin Histoire 01">
+    <path class="cls-1" d="M7.58,6.95h19.39c.25,0,.47-.15.58-.37s.08-.49-.08-.69c0,0-.35-.47-.46-1.53H7.58c-.36,0-.65-.29-.65-.65s.29-.65.65-.65h19.43c.11-1.05.46-1.52.46-1.52.16-.19.2-.46.1-.69-.1-.23-.33-.38-.59-.38H7.58c-1.78,0-3.23,1.45-3.23,3.23s1.45,3.23,3.23,3.23Z"/>
+    <path class="cls-1" d="M26.97,8.24H7.58c-1.27,0-2.41-.53-3.23-1.37v21.4c0,1.78,1.45,3.23,3.23,3.23h19.39c.36,0,.65-.29.65-.65V8.12c-.21.07-.42.12-.65.12Z"/>
+  </g>
+</svg>

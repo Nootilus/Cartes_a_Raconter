@@ -166,10 +166,18 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - Ajout du fichier `template_cartes.json`
 - Ajout du fichier `originales.json` (Contes de fées)
 
+--- Version 0.4
+- Ajout de l’envoi des résultats par mail
+  - Pas satisfaisant : un mailto basique mal formaté
+    - mais c’est déjà ça…
+- Ajout de pictos SVG pour les catégories de cartes
+- Un peu de couleurs en CSS (à modifier)
+
 ### Carnet de route
 
 - [ ] Amélioration de l’interface
-- [ ] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
+- [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
+  - [ ] Améliorer le système de mail
 - [ ] Responsiveness
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers
@@ -185,6 +193,9 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 
 <!-- CONTRIBUTING -->
 ## Contributing
+
+
+https://thenounproject.com/browse/collection-icon/basic-solid-icons-62704/?p=1
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 

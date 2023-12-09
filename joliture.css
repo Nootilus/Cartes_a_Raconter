@@ -4,6 +4,13 @@ body {
     margin: 20px;
 }
 
+.pictos {
+  padding: 0px 8px 3.5px 0px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -11,7 +18,7 @@ button {
     margin-top: 10px;
 }
 
-#reboot {
+#reboot, #goMail {
     margin: 10px auto;
     display: none;
 }
@@ -26,19 +33,33 @@ button {
     display: none;
     width: 80%;
     margin: 0 auto; /* Centre horizontalement */
-  }
-  
-  .participant-block {
-    text-align: center; /* Centre le contenu des cellules */
-  }
-  
-  table {
-    width: 100%; /* Remplit la largeur de la div parente */
-    border-collapse: collapse; /* Supprime les espaces entre les cellules */
-  }
-  
-  th, td {
-    padding: 10px; /* Ajoute un espace autour du contenu des cellules */
-    border: 1px solid #ddd; /* Ajoute une bordure légère entre les cellules */
-  }
-  
+}
+
+.participant-block {
+  text-align: center; /* Centre le contenu des cellules */
+}
+
+
+
+table {
+  width: 100%; /* Remplit la largeur de la div parente */
+  border-collapse: collapse; /* Supprime les espaces entre les cellules */
+}
+
+th, td {
+  padding: 10px; /* Ajoute un espace autour du contenu des cellules */
+  border: 1px solid #ddd; /* Ajoute une bordure légère entre les cellules */
+}
+
+.celTab {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.participant {
+  background-color: bisque;
+}
+
+.chute {
+  background-color: burlywood;
+}

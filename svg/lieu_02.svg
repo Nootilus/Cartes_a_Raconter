@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Pictos_Cartes_à_Histoires" data-name="Pictos Cartes à Histoires" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path id="Lieu_02" data-name="Lieu 02" class="cls-1" d="M29.45,16.19L16.44,1.99c-.22-.24-.65-.24-.87,0L2.55,16.19c-.16.17-.2.42-.11.64.09.22.31.35.54.35h2.96v12.43c0,.33.27.59.59.59h5.92c.33,0,.59-.27.59-.59v-8.88h5.92v8.88c0,.33.27.59.59.59h5.92c.33,0,.59-.27.59-.59v-12.43h2.96c.23,0,.45-.14.54-.35.09-.21.05-.47-.11-.64Z"/>
+</svg>

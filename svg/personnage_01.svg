@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Pictos_Cartes_à_Histoires" data-name="Pictos Cartes à Histoires" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Personnage_01" data-name="Personnage 01">
+    <path class="cls-1" d="M16,16.04c-8,0-14.52,6.51-14.52,14.52,0,.35.28.63.63.63h27.77c.35,0,.63-.28.63-.63,0-8-6.51-14.52-14.52-14.52Z"/>
+    <circle class="cls-1" cx="16" cy="7.76" r="6.94"/>
+  </g>
+</svg>

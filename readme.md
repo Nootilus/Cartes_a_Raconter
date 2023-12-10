@@ -1,23 +1,5 @@
-<!-- Improved compatibility of Retour en haut link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -25,32 +7,28 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Nootilus/Cartes_a_Raconter">
+    <img src="img_readme/noot_scribulerie.png" alt="Logo" width="120" height="120">
   </a>
 
 <h3 align="center">Générateur aléatoire de cartes à histoires</h3>
 
   <p align="center">
-    project_description
+    Un générateur de tirages de cartes à raconter des histoires pour atelier d’écriture et jeux d’écriture à contraintes.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>La doc »</strong></a>
+    <a href="https://github.com/Nootilus/Cartes_a_Raconter"><strong>La doc »</strong></a>
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">Accès à la démo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Relever un bug</a>
+    <a href="https://github.com/Nootilus/Cartes_a_Raconter/issues">Relever un bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Suggérer une amélioration</a>
+    <a href="https://github.com/Nootilus/Cartes_a_Raconter/issues">Suggérer une amélioration</a>
   </p>
 </div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -83,13 +61,24 @@
 <!-- ABOUT THE PROJECT -->
 ## À propos
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Ce projet propose un système simple et adaptable pour générer des tirages de cartes contenant des éléments destinés à guider l’écriture de courtes histoires dans différents univers.
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Pour le moment, les univers disponibles sont :
+- Contes de fées
+- Science-fiction
+- Steampunk
+
+À l’origine de cette idée se trouve le jeu de société « _[Il était une fois](https://fr.wikipedia.org/wiki/Il_%C3%A9tait_une_fois%E2%80%A6_(jeu))_ » édité par _Asmodée_. J’utilise ce jeu comme source d’éléments narratifs durant mes ateliers d’écriture. Les participants adorent, mais m’ont fait la remarque que le jeu de base était un peu trop orienté _contes de fées_ et qu’à l’usage il devenait répétitif.
+
+Je me suis donc mis en tête de créer des jeux de cartes sur le même système, mais dans d’autres univers. En attendant un éventuel budget pour les éditer sous forme de cartes, j’ai décidé de créer une application web permettant de simuler les tirages.
+
+L’idée est également de proposer un système modulaire et –je l’espère– suffisamment simple pour que d’autres se l’accaparent et créent leurs propres versions.
+
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) 
+
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`-->
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
-
-
 
 ### Développement
 
@@ -108,9 +97,8 @@ Ce mini-site a été codé avec [VSCodium](https://vscodium.com/) et un soutien 
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+<!--
 ## Pour commencer
 
 This is an example of how you may give instructions on setting up your project locally.
@@ -142,29 +130,46 @@ This is an example of how to list things you need to use the software and how to
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
-
+-->
 
 <!-- USAGE EXAMPLES -->
 ## Utilisation
 
+### Fonctionnement du site en version v 0.5
+
+1. Dans le menu déroulant, on choisit le set de cartes à utiliser.
+2. On choisi ensuite le nombre de participants.
+3. On renseigne les prénoms de chaque participant.
+4. On clique sur le bouton « `Tirer les cartes` »
+5. Le site génère le tirage.
+6. Cliquer sur « `Recommencer` » pour réinitialiser le système 
+7. On peut éventuellement cliquer sur « `Envoyer les résultats` » pour obtenir une trace écrite des tirages
+
+### S’emparer du projet
+
+===> À faire :
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!--
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
+-->
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
-
-
 <!-- ROADMAP -->
-## Fait - À faire
+## Fait & À faire
 
 ### Journal de bord
---- Version 0.3
-- Création du git
-- Ajout du `readme.md` de la mort
-- Ajout des cartes originales dans la liste
-- Ajout du fichier `template_cartes.json`
-- Ajout du fichier `originales.json` (Contes de fées)
+
+--- Version 0.5
+- Ajout de texte d’aide au survol des pictos
+- Mise en page de tableaux de résultats
 
 --- Version 0.4
 - Ajout de l’envoi des résultats par mail
@@ -173,9 +178,17 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - Ajout de pictos SVG pour les catégories de cartes
 - Un peu de couleurs en CSS (à modifier)
 
+--- Version 0.3
+- Création du git
+- Ajout du `readme.md` de la mort
+- Ajout des cartes originales dans la liste
+- Ajout du fichier `template_cartes.json`
+- Ajout du fichier `originales.json` (Contes de fées)
+
 ### Carnet de route
 
 - [ ] Amélioration de l’interface
+- [ ] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
   - [ ] Améliorer le système de mail
 - [ ] Responsiveness
@@ -185,63 +198,50 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] Horreur
     - [ ] Polar
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
-
-
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contributions
 
+Ce projet est composé à peu près de :
+- 10 à 20 % de travail fourni par votre serviteur
+- 80 à 90 % de code généré par l’ami ChatGPT 3.5
 
-https://thenounproject.com/browse/collection-icon/basic-solid-icons-62704/?p=1
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+La majorité des pictos ont été créés par [_Icon54_](https://thenounproject.com/icon54app/), proposés sur le site [**Noun Project**](https://thenounproject.com/browse/collection-icon/basic-solid-icons-62704/?p=1) dans la collection correspondante.
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Ce projet est distribué sous _General Public License_ (GPL), version 3.
+Voir le fichier `license.txt` pour plus d’infos.
+
+===> Fichier `license.txt` à faire
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Vincent Corlaix - [LittleLinks](http://littlelink.nootilus.com/) - vcorlaix@proton.me
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.com/Nootilus/Cartes_a_Raconter)
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Remerciements
 
-* []()
+* [Olivier Gechter](https://gechter.org/blog/) – Très tôt beta-testeur
 * []()
 * []()
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

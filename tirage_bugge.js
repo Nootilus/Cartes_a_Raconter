@@ -1,6 +1,6 @@
 // Variables globales
-resultmail = "";
-
+let resultmail = '';
+let cartesRestantes = {};
 
 function tirerCartes() {
     const nombreDePersonnes = document.getElementById('nombreDePersonnes').value;
@@ -10,9 +10,9 @@ function tirerCartes() {
     const formTirage = document.getElementById('formTirage');
     const rebootBTN = document.getElementById('reboot');
     const goMail = document.getElementById('goMail');
-    const cheminFichierJson = choixFichierJson.value; // Récupère le chemin du fichier sélectionné
-    
-    // Vérifiez que le nombre de personnes est valide
+    const cheminFichierJson = choixFichierJson.value;
+
+    // Vérifie que le nombre de personnes est valide
     if (nombreDePersonnes < 1) {
         alert("Veuillez entrer un nombre de personnes valide (au moins 1).");
         return;
@@ -40,20 +40,21 @@ function tirerCartes() {
         .then(response => response.json())
         .then(data => {
             const listesDeCartes = data.listesDeCartes;
-            resultmail += `Deck : ` + choixFichierJson.value +` ; `;
+            
+            // Initialiser les listes de cartes
+            initialiserListesDeCartes(listesDeCartes);
 
             // Tirer les cartes pour chaque personne
             for (let i = 0; i < nombreDePersonnes; i++) {
+                // Tirer les cartes pour chaque participant
+                const rPerso = tirerUneCarte('personnage');
+                const rAspect = tirerUneCarte('aspect');
+                const rObjet = tirerUneCarte('objet');
+                const rLieu = tirerUneCarte('lieu');
+                const rEvent = tirerUneCarte('événement');
+                const rChute = tirerUneCarte('chute');
 
-                // Étape 1 – Des variables pour l’affichage et le mail
-                rPerso = listesDeCartes[0][Math.floor(Math.random() * listesDeCartes[0].length)];
-                rAspect = listesDeCartes[1][Math.floor(Math.random() * listesDeCartes[1].length)];
-                rObjet =  listesDeCartes[4][Math.floor(Math.random() * listesDeCartes[4].length)];
-                rLieu = listesDeCartes[2][Math.floor(Math.random() * listesDeCartes[2].length)];
-                rEvent = listesDeCartes[3][Math.floor(Math.random() * listesDeCartes[3].length)];
-                rChute = listesDeCartes[5][Math.floor(Math.random() * listesDeCartes[5].length)];
-
-                // Étape 2 – Afficher les résultats
+                // Afficher les résultats
                 const participantDiv = document.createElement('div');
                 participantDiv.className = 'participant-block';
 
@@ -63,23 +64,23 @@ function tirerCartes() {
                             <td class="celParticipant celPicto"><img class="pictos" src="svg/participant_01.svg" alt="Participant" title="Le participant"></td>
                             <td class="celTab celParticipant">${prenoms[i]}</td>
                             <td class="celPicto"><img class="pictos" src="svg/personnage_01.svg" alt="Personnage" title="Le personnage"></td>
-                            <td class="celTab">${rPerso}</td> <!-- Carte Personnage -->
+                            <td class="celTab">${rPerso}</td>
                             <td class="celPicto"><img class="pictos" src="svg/aspect_01.svg" alt="Aspect" title="L’aspect"></td>
-                            <td class="celTab">${rAspect}</td> <!-- Carte Aspect -->
+                            <td class="celTab">${rAspect}</td>
                         </tr>
                         <tr>
                             <td class="celPicto"><img class="pictos" src="svg/objet_01.svg" alt="Objet" title="L’objet"></td>
-                            <td class="celTab">${rObjet}</td> <!-- Carte Objet -->
+                            <td class="celTab">${rObjet}</td>
                             <td class="celPicto"><img class="pictos" src="svg/lieu_01.svg" alt="Lieu" title="Le lieu"></td>
-                            <td class="celTab">${rLieu}</td> <!-- Carte Lieu -->
+                            <td class="celTab">${rLieu}</td>
                             <td class="celPicto"><img class="pictos" src="svg/evenement_01.svg" alt="Événement" title="L'événement"></td>
-                            <td class="celTab">${rEvent}</td> <!-- Carte Événement -->
+                            <td class="celTab">${rEvent}</td>
                         </tr>
                     </table>
                     <table>
                         <tr>
                             <td class="celChute celPicto"><img class="pictos" src="svg/chute_01.svg" alt="Fin de l’histoire" title="La fin de l’histoire"></td>
-                            <td class="celChute">${rChute}</td> <!-- Carte Fin d'histoire -->
+                            <td class="celChute">${rChute}</td>
                         </tr>
                     </table>
                     <br/>
@@ -89,14 +90,14 @@ function tirerCartes() {
 
                 resultDiv.appendChild(participantDiv);
 
-                // Étape 3 – Remplir le corps du mail
-                resultmail += 'Participant : ' + prenoms[i] +` ; `
-                resultmail += 'Personnage : ' + rPerso +` ; `
-                resultmail += 'Aspect : ' + rAspect +` ; `
-                resultmail += 'Objet : ' + rObjet +` ; `
-                resultmail += 'Lieu : ' + rLieu +` ; `
-                resultmail += 'Événement : ' + rEvent +` ; `
-                resultmail += 'Fin d’histoire : ' + rChute +` ; `
+                // Remplir le corps du mail
+                resultmail += 'Participant : ' + prenoms[i] + ` ; `
+                resultmail += 'Personnage : ' + rPerso + ` ; `
+                resultmail += 'Aspect : ' + rAspect + ` ; `
+                resultmail += 'Objet : ' + rObjet + ` ; `
+                resultmail += 'Lieu : ' + rLieu + ` ; `
+                resultmail += 'Événement : ' + rEvent + ` ; `
+                resultmail += 'Fin d’histoire : ' + rChute + ` ; `
                 resultmail += ' /// ';
             }
 
@@ -109,6 +110,14 @@ function tirerCartes() {
         .catch(error => console.error('Erreur lors du chargement du fichier JSON :', error));
 }
 
+function tirerUneCarte(type) {
+    if (cartesRestantes[type] && cartesRestantes[type].length > 0) {
+        const index = Math.floor(Math.random() * cartesRestantes[type].length);
+        const carteTiree = cartesRestantes[type].splice(index, 1)[0];
+        return carteTiree;
+    }
+    return 'Carte épuisée';
+}
 
 function reinitialiserPage() {
     document.getElementById('nombreDePersonnes').value = 1;
@@ -126,10 +135,19 @@ function envoyerMail() {
 
     var destinataire = 'scribulerie@nootilus.com';
     var sujet = 'Cartes du ' + dateFormattee;
-    var corps = 'Tirage du '+ dateFormattee +' : '+ resultmail;
+    var corps = 'Tirage du ' + dateFormattee + ' : ' + resultmail;
 
     var mailtoLink = 'mailto:' + destinataire + '?subject=' + encodeURIComponent(sujet) + '&body=' + encodeURIComponent(corps);
 
     window.location.href = mailtoLink;
 }
 
+function initialiserListesDeCartes(listesDeCartes) {
+    cartesRestantes = {};
+    for (let i = 0; i < listesDeCartes.length; i++) {
+        const typeCarte = listesDeCartes[i][0].type; // Assure-toi que la première carte de chaque liste a un champ "type"
+        cartesRestantes[typeCarte] = [...listesDeCartes[i]];
+    } else {
+        console.error(`La liste de cartes à l'indice ${i} ne contient pas l'élément attendu.`);
+    }
+}

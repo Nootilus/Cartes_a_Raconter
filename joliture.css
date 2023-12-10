@@ -52,14 +52,20 @@ th, td {
 }
 
 .celTab {
+  width: 34%;
+  word-wrap: break-word;  
   text-align: left;
   padding-left: 10px;
 }
 
-.participant {
-  background-color: bisque;
+.celPicto { width: 40px; }
+
+.celPicto img {
+  width: 32px;
+  height: 32px;
+  cursor: help;
 }
 
-.chute {
-  background-color: burlywood;
-}
+.celParticipant { background-color: bisque; }
+
+.celChute { background-color: burlywood; }

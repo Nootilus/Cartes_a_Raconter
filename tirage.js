@@ -40,7 +40,14 @@ function tirerCartes() {
         .then(response => response.json())
         .then(data => {
             const listesDeCartes = data.listesDeCartes;
-            resultmail += `Deck : ` + choixFichierJson.value +` ; `;
+            const univers = data.univers;
+            resultmail += `Deck : ` + univers +` ; `;
+
+            // Afficher le deck choisi
+            const choixUnivers = document.createElement('h3');
+            choixUnivers.className = "univers";
+            choixUnivers.innerHTML = 'Dans l’univers '+ univers;
+            resultDiv.appendChild(choixUnivers);
 
             // Tirer les cartes pour chaque personne
             for (let i = 0; i < nombreDePersonnes; i++) {

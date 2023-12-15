@@ -82,6 +82,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Développement
 
+* [![vscodium][vscodium.js]][vscodium-url]
+* [![chatGTP][chatGTP.js]][chatGTP-url]
+
 Ce mini-site a été codé avec [VSCodium](https://vscodium.com/) et un soutien inconditionnel de _ChatGPT 3.5_.
 
 <!-- 
@@ -135,15 +138,18 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Utilisation
 
-### Fonctionnement du site en version v 0.5
+### Fonctionnement du site en version v0.6
 
 1. Dans le menu déroulant, on choisit le set de cartes à utiliser.
-2. On choisi ensuite le nombre de participants.
-3. On renseigne les prénoms de chaque participant.
-4. On clique sur le bouton « `Tirer les cartes` »
-5. Le site génère le tirage.
-6. Cliquer sur « `Recommencer` » pour réinitialiser le système 
-7. On peut éventuellement cliquer sur « `Envoyer les résultats` » pour obtenir une trace écrite des tirages
+2. On choisi si les cartes sont uniques (réaliste) ou clonées (infinies)
+3. On choisi ensuite le nombre de participants.
+4. On renseigne les prénoms de chaque participant.
+5. On clique sur le bouton « `Tirer les cartes` »
+6. Le site génère le tirage.
+7. Cliquer sur « `Recommencer` » pour réinitialiser le système 
+8. On peut éventuellement cliquer sur « `Envoyer les résultats` » pour obtenir une trace écrite des tirages
+
+_Note_ : Le choix des cartes uniques ou clonées détermine si le tirage se comporte de manière réaliste ou non. Dans le cas réaliste –à l’image d’un véritable jeu de cartes– lorsqu’une carte est tirée, elle ne peut plus se trouver dans le paquet restant à distribuer. Chaque carte est alors unique. Dans le cas contraire, les cartes sont _clonables_, c’est à dire que peu importe si une carte a été tirée, elle reste dans la liste des cartes disponibles.
 
 ### S’emparer du projet
 
@@ -245,13 +251,19 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 ## Remerciements
 
 * [Olivier Gechter](https://gechter.org/blog/) – Très tôt beta-testeur
-* []()
+* [Les participants de la Scribulerie](https://scribulerie.nootilus.com/) – Les cobayes contentants
 * []()
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[vscodium-shield]: https://img.shields.io/badge/VS-Codium-blue
+[vscodium-url]: https://vscodium.com/
+[chatGTP-shield]: https://img.shields.io/badge/Chat-GTP-orange
+[chatGTP-url]: https://chat.openai.com/
+
+<!-- 
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
@@ -281,3 +293,5 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
+-->

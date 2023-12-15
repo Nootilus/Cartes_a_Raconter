@@ -82,8 +82,8 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Développement
 
-* [![vscodium][vscodium.js]][vscodium-url]
-* [![chatGTP][chatGTP.js]][chatGTP-url]
+* [![vscodium][vscodium-shield]][vscodium-url]
+* [![chatGTP][chatGTP-shield]][chatGTP-url]
 
 Ce mini-site a été codé avec [VSCodium](https://vscodium.com/) et un soutien inconditionnel de _ChatGPT 3.5_.
 
@@ -263,7 +263,6 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [chatGTP-shield]: https://img.shields.io/badge/Chat-GTP-orange
 [chatGTP-url]: https://chat.openai.com/
 
-<!-- 
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
@@ -277,6 +276,9 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/linkedin_username
 [product-screenshot]: images/screenshot.png
+
+<!-- 
+
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB

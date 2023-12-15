@@ -263,7 +263,7 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [chatGTP-shield]: https://img.shields.io/badge/Chat-GTP-orange
 [chatGTP-url]: https://chat.openai.com/
 
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Nootilus/Cartes_a_Raconter.svg?style=for-the-badge
 [contributors-url]: https://github.com/Nootilus/Cartes_a_Raconter/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Nootilus/Cartes_a_Raconter.svg?style=for-the-badge
 [forks-url]: https://github.com/Nootilus/Cartes_a_Raconter/network/members
@@ -274,7 +274,7 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [license-shield]: https://img.shields.io/github/license/Nootilus/Cartes_a_Raconter.svg?style=for-the-badge
 [license-url]: https://github.com/Nootilus/Cartes_a_Raconter/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://www.linkedin.com/in/vincent-corlaix/
 [product-screenshot]: images/screenshot.png
 
 <!-- 

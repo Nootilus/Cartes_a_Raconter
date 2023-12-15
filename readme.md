@@ -167,9 +167,16 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### Journal de bord
 
+--- Version 0.6
+- Ajout du choix du système de tirage :
+  - Cartes uniques : chaque carte est unique au tirage, elle ne peut apparaitre qu’une fois par tirage (choix par défaut)
+  - Cartes clones : Une même carte peut être tirée plusieurs fois dans le même tirage
+
 --- Version 0.5
 - Ajout de texte d’aide au survol des pictos
 - Mise en page de tableaux de résultats
+- Ajout de l’affichage du deck choisi dans les résultats 
+  - … et dans le mail
 
 --- Version 0.4
 - Ajout de l’envoi des résultats par mail
@@ -188,7 +195,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ### Carnet de route
 
 - [ ] Amélioration de l’interface
-- [ ] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
+- [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
   - [ ] Améliorer le système de mail
 - [ ] Responsiveness

@@ -1,9 +1,9 @@
 // Variables globales
 resultmail = "";
 
-
 function tirerCartes() {
     const nombreDePersonnes = document.getElementById('nombreDePersonnes').value;
+    const cartesUniques = document.getElementById('cartesUniques').checked;
     const choixFichierJson = document.getElementById('choixFichierJson');
     const resultDiv = document.getElementById('result');
     const nomsDiv = document.getElementById('noms');
@@ -11,7 +11,8 @@ function tirerCartes() {
     const rebootBTN = document.getElementById('reboot');
     const goMail = document.getElementById('goMail');
     const cheminFichierJson = choixFichierJson.value; // Récupère le chemin du fichier sélectionné
-    
+
+
     // Vérifiez que le nombre de personnes est valide
     if (nombreDePersonnes < 1) {
         alert("Veuillez entrer un nombre de personnes valide (au moins 1).");
@@ -43,6 +44,45 @@ function tirerCartes() {
             const univers = data.univers;
             resultmail += `Deck : ` + univers +` ; `;
 
+            // Cloner les catégories dans des tableaux temporaires
+            tPerso = [];
+            tAspect = [];
+            tObjet = [];
+            tLieu = [];
+            tEvent = [];
+            tChute = [];
+
+            // personnages
+            who = -1;
+            while (++who < listesDeCartes[0].length) {
+                tPerso[who] = listesDeCartes[0][who];
+            };
+            // aspects
+            who = -1;
+            while (++who < listesDeCartes[1].length) {
+                tAspect[who] = listesDeCartes[1][who];
+            };
+            // lieux 
+            who = -1;
+            while (++who < listesDeCartes[2].length) {
+                tLieu[who] = listesDeCartes[2][who];
+            };
+            // événements
+            who = -1;
+            while (++who < listesDeCartes[3].length) {
+                tEvent[who] = listesDeCartes[3][who];
+            };
+            // objets
+            who = -1;
+            while (++who < listesDeCartes[4].length) {
+                tObjet[who] = listesDeCartes[4][who];
+            };
+            // chutes
+            who = -1;
+            while (++who < listesDeCartes[5].length) {
+                tChute[who] = listesDeCartes[5][who];
+            };
+
             // Afficher le deck choisi
             const choixUnivers = document.createElement('h3');
             choixUnivers.className = "univers";
@@ -52,14 +92,50 @@ function tirerCartes() {
             // Tirer les cartes pour chaque personne
             for (let i = 0; i < nombreDePersonnes; i++) {
 
-                // Étape 1 – Des variables pour l’affichage et le mail
-                rPerso = listesDeCartes[0][Math.floor(Math.random() * listesDeCartes[0].length)];
-                rAspect = listesDeCartes[1][Math.floor(Math.random() * listesDeCartes[1].length)];
-                rObjet =  listesDeCartes[4][Math.floor(Math.random() * listesDeCartes[4].length)];
-                rLieu = listesDeCartes[2][Math.floor(Math.random() * listesDeCartes[2].length)];
-                rEvent = listesDeCartes[3][Math.floor(Math.random() * listesDeCartes[3].length)];
-                rChute = listesDeCartes[5][Math.floor(Math.random() * listesDeCartes[5].length)];
+                switch(cartesUniques) {
+                    case true:
+                        // VERSION CARTES UNIQUES
+                        // Tirage perso
+                        randPerso = Math.floor(Math.random() * tPerso.length);
+                        rPerso = tPerso[randPerso];
+                        tPerso.splice(randPerso, 1)
 
+                        // Tirage aspect
+                        randAspect = Math.floor(Math.random() * tAspect.length);
+                        rAspect = tAspect[randAspect];
+                        tAspect.splice(randAspect, 1)
+
+                        // Tirage objet
+                        randObjet = Math.floor(Math.random() * tObjet.length);
+                        rObjet = tObjet[randObjet];
+                        tObjet.splice(randObjet, 1)
+
+                        // Tirage lieu
+                        randLieu = Math.floor(Math.random() * tLieu.length);
+                        rLieu = tLieu[randLieu];
+                        tLieu.splice(randLieu, 1)
+
+                        // Tirage événement
+                        randEvent = Math.floor(Math.random() * tEvent.length);
+                        rEvent = tEvent[randEvent];
+                        tEvent.splice(randEvent, 1)
+
+                        // Tirage chute
+                        randChute = Math.floor(Math.random() * tChute.length);
+                        rChute = tChute[randChute];
+                        tChute.splice(randChute, 1)
+                        break;
+
+                    case false: 
+                // VERSION CARTES CLONÉES
+                    rPerso = listesDeCartes[0][Math.floor(Math.random() * listesDeCartes[0].length)];
+                    rAspect = listesDeCartes[1][Math.floor(Math.random() * listesDeCartes[1].length)];
+                    rObjet =  listesDeCartes[4][Math.floor(Math.random() * listesDeCartes[4].length)];
+                    rLieu = listesDeCartes[2][Math.floor(Math.random() * listesDeCartes[2].length)];
+                    rEvent = listesDeCartes[3][Math.floor(Math.random() * listesDeCartes[3].length)];
+                    rChute = listesDeCartes[5][Math.floor(Math.random() * listesDeCartes[5].length)];
+                    break;
+                }
                 // Étape 2 – Afficher les résultats
                 const participantDiv = document.createElement('div');
                 participantDiv.className = 'participant-block';
@@ -91,8 +167,7 @@ function tirerCartes() {
                     </table>
                     <br/>
                     <hr/>
-                    <br/>
-                `;
+                    <br/>`;
 
                 resultDiv.appendChild(participantDiv);
 
@@ -139,4 +214,3 @@ function envoyerMail() {
 
     window.location.href = mailtoLink;
 }
-

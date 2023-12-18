@@ -4,7 +4,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![GPL3 License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
@@ -234,9 +234,7 @@ La majorité des pictos ont été créés par [_Icon54_](https://thenounproject.
 ## License
 
 Ce projet est distribué sous _General Public License_ (GPL), version 3.
-Voir le fichier `license.txt` pour plus d’infos.
-
-===> Fichier `license.txt` à faire
+Voir le fichier `LICENSE` pour plus d’infos.
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
@@ -276,7 +274,7 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [issues-shield]: https://img.shields.io/github/issues/Nootilus/Cartes_a_Raconter.svg?style=for-the-badge
 [issues-url]: https://github.com/Nootilus/Cartes_a_Raconter/issues
 [license-shield]: https://img.shields.io/github/license/Nootilus/Cartes_a_Raconter.svg?style=for-the-badge
-[license-url]: https://github.com/Nootilus/Cartes_a_Raconter/blob/master/LICENSE.txt
+[license-url]: https://github.com/Nootilus/Cartes_a_Raconter/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/vincent-corlaix/
 [product-screenshot]: images/screenshot.png

@@ -8,37 +8,51 @@
     <script src="tirage.js"></script>
 </head>
 <body>
-    <h1>Tirage de Cartes à Raconter</h1>
 
-    <div id="formTirage">
-        <label for="choixFichierJson">Univers&nbsp;:</label>
-        <select id="choixFichierJson">
-            <option value="originales.json" selected>Contes de Fées</option>
-            <option value="scifi.json">Science-Fiction</option>
-            <option value="steampunk.json">Steampunk</option>
-        </select>
-
-        <input type="checkbox" id="cartesUniques" name="cartesUniques" value=true checked>
-        <label for="cartesUniques"> Cartes uniques</label><br>
-
-        <label for="nombreDePersonnes">Participants&nbsp;:</label>
-        <input type="number" id="nombreDePersonnes" min="1" value="1">
-
-        <div id="noms">
-            <!-- Les champs de saisie pour les prénoms seront ajoutés ici dynamiquement -->
+    <div class="Principal">
+        <div class="Entete">
+            <h1>Tirage de Cartes à Raconter</h1>
         </div>
 
-        <button onclick="tirerCartes()">Tirer les Cartes</button>
-    </div>
+        <div class="Contenu">
+            <div id="formTirage">
+                <label for="choixFichierJson">Univers&nbsp;:</label>
+                <select id="choixFichierJson">
+                    <option value="originales.json" selected>Contes de Fées</option>
+                    <option value="scifi.json">Science-Fiction</option>
+                    <option value="steampunk.json">Steampunk</option>
+                    <option value="horreur.json">Horreur (WiP)</option>
+                </select>
 
-    <div id="result">
-        <div class="participant-block">
-            <!-- Tableaux des résultats remplis ici par le JS -->
+                <div class="leChoix">
+                    <input type="checkbox" id="cartesUniques" class="topCoolCheckbox" name="cartesUniques" value=true checked>
+                    <label for="cartesUniques"> Cartes uniques</label><br>
+                </div>
+        
+                <label for="nombreDePersonnes">Participants&nbsp;:</label>
+                <input type="number" id="nombreDePersonnes" min="1" value="1">
+        
+                <div id="noms">
+                    <!-- Les champs de saisie pour les prénoms seront ajoutés ici dynamiquement -->
+                </div>
+        
+                <button id="tirageBtn" onclick="tirerCartes()">Tirer les Cartes</button>
+            </div>
+        
+            <div id="result">
+                <div class="participant-block">
+                    <!-- Tableaux des résultats remplis ici par le JS -->
+                </div>
+            </div>
+        
+            <button id="reboot" onclick="reinitialiserPage()">Recommencer</button>
+            <button id="goMail" onclick="envoyerMail()">Envoyer les résultats</button>
+        </div>
+
+        <div class="BasPage">
+            &copy 2023 – Vincent Corlaix
         </div>
     </div>
-
-    <button id="reboot" onclick="reinitialiserPage()">Recommencer</button>
-    <button id="goMail" onclick="envoyerMail()">Envoyer les résultats</button>
 
     <script>
         // Fonction pour ajouter dynamiquement les champs de saisie des prénoms

@@ -173,6 +173,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### Journal de bord
 
+--- Version 0.7
+- Amélioration de l’interface, mais c’est pas encore ça.
+- Ajout d’un _work in progress_ de l’univers **Horreur**.
+
 --- Version 0.6
 - Ajout du choix du système de tirage :
   - Cartes uniques : chaque carte est unique au tirage, elle ne peut apparaitre qu’une fois par tirage (choix par défaut)
@@ -208,7 +212,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers
     - [ ] Fantasy
-    - [ ] Horreur
+    - [X] Horreur (en cours…)
     - [ ] Polar
 
 Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.

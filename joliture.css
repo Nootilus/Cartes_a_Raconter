@@ -1,7 +1,152 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    margin: 20px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+}
+
+.Principal {
+  display: grid;
+  grid-template-columns: 0.2fr 2.2fr 0.2fr;
+  grid-template-rows: 0.3fr 2.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Entete Entete Entete"
+    ". Contenu ."
+    "BasPage BasPage BasPage";
+}
+
+.Entete {
+  grid-area: Entete;
+  justify-self: center; 
+  align-self: center;
+  /* pour localisation
+  background-color: #ff7f7f; */
+}
+
+.BasPage {
+  grid-area: BasPage;
+  justify-self: center; 
+  align-self: center; 
+  /* pour localisation
+  background-color: #8c7fff; */
+}
+
+.Contenu {
+  grid-area: Contenu;
+  /* pour localisation
+  background-color: #7fffaa; */
+}
+
+#formTirage {
+  display: block;
+  width: 60%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  /*transform: translate(-30%);*/
+}
+
+h1 { color: #333 }
+
+label { margin-right: 20px; }
+
+input, select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#cartesUniques {
+  margin-right: 10px;
+  flex-direction: row;
+}
+
+.leChoix {
+  height: 30px;
+  padding: 10px;
+}
+
+.leChoix .topCoolCheckbox {
+  appearance: none;
+  background-color: #dfe1e4;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+}
+
+.leChoix .topCoolCheckbox::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.leChoix .topCoolCheckbox,
+.leChoix .topCoolCheckbox::after {
+  transition: all 100ms ease-out;
+}
+
+.leChoix .topCoolCheckbox::after {
+  background-color: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.leChoix input[type=checkbox] {
+  cursor: default;
+}
+
+.leChoix .topCoolCheckbox:hover {
+  background-color: #c9cbcd;
+  transition-duration: 0s;
+}
+
+.leChoix .topCoolCheckbox:checked {
+  background-color: #6e79d6;
+}
+
+.leChoix .topCoolCheckbox:checked::after {
+  background-color: #fff;
+  left: 13px;
+}
+
+.leChoix :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.leChoix .topCoolCheckbox:checked:hover {
+  background-color: #535db3;
+}
+
+.leChoix .label { height: 14px; }
+
+#tirageBtn {
+  background-color: #DEB887;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .pictos {
@@ -12,34 +157,32 @@ body {
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 #reboot, #goMail {
-    margin: 10px auto;
-    display: none;
+  margin: 10px auto;
+  display: none;
 }
 
 /* Style pour les champs de saisie des prénoms */
 .prenom-input {
-    margin: 5px;
-    padding: 5px;
+  margin: 5px;
+  padding: 5px;
 }
 
 #result {
-    display: none;
-    width: 80%;
-    margin: 0 auto; /* Centre horizontalement */
+  display: none;
+  width: 80%;
+  margin: 0 auto; /* Centre horizontalement */
 }
 
 .participant-block {
   text-align: center; /* Centre le contenu des cellules */
 }
-
-
 
 table {
   width: 100%; /* Remplit la largeur de la div parente */
@@ -66,6 +209,6 @@ th, td {
   cursor: help;
 }
 
-.celParticipant { background-color: bisque; }
+.celParticipant { background-color: #FFE4C4; }
 
-.celChute { background-color: burlywood; }
+.celChute { background-color: #DEB887; }

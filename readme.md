@@ -67,6 +67,7 @@ Pour le moment, les univers disponibles sont :
 - Contes de fées
 - Science-fiction
 - Steampunk
+- Horreur
 
 À l’origine de cette idée se trouve le jeu de société « _[Il était une fois](https://fr.wikipedia.org/wiki/Il_%C3%A9tait_une_fois%E2%80%A6_(jeu))_ » édité par _Asmodée_. J’utilise ce jeu comme source d’éléments narratifs durant mes ateliers d’écriture. Les participants adorent, mais m’ont fait la remarque que le jeu de base était un peu trop orienté _contes de fées_ et qu’à l’usage il devenait répétitif.
 

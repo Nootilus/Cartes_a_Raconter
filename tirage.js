@@ -144,7 +144,7 @@ function tirerCartes() {
                     <table>
                         <tr>
                             <td class="celParticipant celPicto"><img class="pictos" src="svg/participant_01.svg" alt="Participant" title="Le participant"></td>
-                            <td class="celTab celParticipant">${prenoms[i]}</td>
+                            <td class="celTab celParticipant">${prenoms[i].toLowerCase()}</td>
                             <td class="celPicto"><img class="pictos" src="svg/personnage_01.svg" alt="Personnage" title="Le personnage"></td>
                             <td class="celTab">${rPerso}</td> <!-- Carte Personnage -->
                             <td class="celPicto"><img class="pictos" src="svg/aspect_01.svg" alt="Aspect" title="L’aspect"></td>

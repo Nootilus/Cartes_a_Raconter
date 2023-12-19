@@ -167,7 +167,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - Amélioration de l’interface, mais c’est pas encore ça (enfin, un peu quand même).
 - Ajout d’un _work in progress_ de l’univers **Horreur**.
   - WiP Horreur terminé (en v1.0)
+- Ajout de l’univers **Polar** (en _work in progress_)
 - Ajout d’une bannière texte dans le code pour dire que c’est moi qui l’ai fait (sauf les json)
+- Ajout du fichier de `LICENSE` pour le _GPL 3.0_.
+- Lissage des noms de participants (mise en minuscule + mise en capitale)
 
 --- Version 0.6
 - Ajout du choix du système de tirage :
@@ -271,23 +274,4 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [linkedin-url]: https://www.linkedin.com/in/vincent-corlaix/
 [product-screenshot]: images/screenshot.png
 
-<!-- 
-
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
-
--->
+<!-- END OF FILE (j’adore !) -->

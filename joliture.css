@@ -180,9 +180,9 @@ button {
   margin: 0 auto; /* Centre horizontalement */
 }
 
-.participant-block {
-  text-align: center; /* Centre le contenu des cellules */
-}
+.participant-block { text-align: center; }
+
+#leParticipant { text-transform: capitalize; }
 
 table {
   width: 100%; /* Remplit la largeur de la div parente */
@@ -209,7 +209,10 @@ th, td {
   cursor: help;
 }
 
-.celParticipant { background-color: #FFE4C4; }
+.celParticipant {
+  background-color: #FFE4C4;
+  text-transform: capitalize;
+}
 
 .celChute { background-color: #DEB887; }
 

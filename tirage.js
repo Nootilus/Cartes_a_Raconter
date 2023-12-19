@@ -226,6 +226,7 @@ function envoyerMail() {
                                   
 Version 0.7b — Décembre 2023
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
+Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 
 Fichier : tirage.js
 

@@ -166,6 +166,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - Amélioration de l’interface, mais c’est pas encore ça (enfin, un peu quand même).
 - Ajout d’un _work in progress_ de l’univers **Horreur**.
   - WiP Horreur terminé (en v1.0)
+- Ajout d’une bannière texte dans le code pour dire que c’est moi qui l’ai fait (sauf les json)
 
 --- Version 0.6
 - Ajout du choix du système de tirage :

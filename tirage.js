@@ -214,3 +214,19 @@ function envoyerMail() {
 
     window.location.href = mailtoLink;
 }
+
+/*
+   _____ _______ _____   _____    
+  / ____|__   __/ ____| |  __ \   
+ | |  __   | | | |      | |__) |  
+ | | |_ |  | | | |      |  _  /   
+ | |__| |_ | |_| |____ _| | \ \ _ 
+  \_____(_)|_(_)\_____(_)_|  \_(_)
+    Générateur de Tirages de Cartes à Raconter©™®                            
+                                  
+Version 0.7b — Décembre 2023
+Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
+
+Fichier : tirage.js
+
+*/

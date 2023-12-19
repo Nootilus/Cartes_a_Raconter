@@ -2,7 +2,7 @@
     "univers": "Nom de l’univers",
     "listesDeCartes": [
         ["Personnages", "25 cartes attendues", "…", "…"],
-        ["Aspect", "25 cartes attendues", "…", "…"],
+        ["Aspect (adjectifs)", "25 cartes attendues", "…", "…"],
         ["Lieux", "20 cartes attendues", "…", "…"],
         ["Événement", "20 cartes attendues", "…", "…"],
         ["Objet", "15 cartes attendues", "…", "…"],

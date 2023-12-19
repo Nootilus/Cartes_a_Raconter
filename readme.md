@@ -87,17 +87,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 Ce mini-site a été codé avec [VSCodium](https://vscodium.com/) et un soutien inconditionnel de _ChatGPT 3.5_.
 
-<!-- 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
--->
-
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -174,8 +163,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ### Journal de bord
 
 --- Version 0.7
-- Amélioration de l’interface, mais c’est pas encore ça.
+- Amélioration de l’interface, mais c’est pas encore ça (enfin, un peu quand même).
 - Ajout d’un _work in progress_ de l’univers **Horreur**.
+  - WiP Horreur terminé (en v1.0)
 
 --- Version 0.6
 - Ajout du choix du système de tirage :
@@ -204,7 +194,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### Carnet de route
 
-- [ ] Amélioration de l’interface
+- [X] Amélioration de l’interface
 - [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
   - [ ] Améliorer le système de mail
@@ -212,7 +202,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers
     - [ ] Fantasy
-    - [X] Horreur (en cours…)
+    - [X] Horreur
     - [ ] Polar
 
 Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.
@@ -253,7 +243,7 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 ## Remerciements
 
 * [Olivier Gechter](https://gechter.org/blog/) – Très tôt beta-testeur
-* [Les participants de la Scribulerie](https://scribulerie.nootilus.com/) – Les cobayes contentants
+* [Les participants de la Scribulerie](https://scribulerie.nootilus.com/) – Les cobayes consentants
 * []()
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>

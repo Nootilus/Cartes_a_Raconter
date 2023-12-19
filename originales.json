@@ -1,5 +1,5 @@
 {
-    "univers": "Conte de Fées",
+    "univers": ["Conte de Fées", "originales"],
     "listesDeCartes": [
         [
             "Des parents",

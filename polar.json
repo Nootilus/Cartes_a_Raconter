@@ -1,5 +1,5 @@
 {
-    "univers": "Policier/Thriller",
+    "univers": ["Policier", "polar"],
     "listesDeCartes": [
         ["Un privé", "Un flic", "Une femme fatale", "Un mac", "Un dealer", "Un vieux flic à la retraite", "Le fantôme d’un détective", "Un détective", "Un espion russe", "Une jeune recrue idéaliste", "Un agent double", "Un témoin clé", "Un politicien véreux", "Un mari trompé", "Un criminel international", "Un trafiquant de drogue", "Un journaliste fouineur", "Un policier intègre", "Un évadé en fuite", "Un maître chanteur", "Une riche veuve", "Un trafiquant d’armes", "Un arnaqueur", "Un chef de gang", "Un juge corrompu"],
         ["Intriguant", "Machiavélique", "Ténébreux", "Criminel", "Suspect", "Énigmatique", "Corrompu", "Imprévisible", "Manipulateur", "Traitre", "Insidieux", "Obsessionnel", "Irrationnel", "Intègre", "Décédé", "Assassiné", "Indéchiffrable", "Brutal", "Caché", "Secret", "Louche", "Sale", "Pauvre", "Menaçant", "Anonyme"],

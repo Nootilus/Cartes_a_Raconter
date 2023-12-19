@@ -1,5 +1,5 @@
 {
-    "univers": "Science-Fiction",
+    "univers": ["Science-Fiction", "scifi"],
     "listesDeCartes": [
         ["Un robot", "Un extra-terrestre", "Un androïde", "Une intelligence artificielle", "Un mutant", "Une princesse", "Un tyran galactique", "Un génie", "Un savant fou", "Une IA", "L’élu", "Un renégat", "Un contrebandier", "Un pilote", "Un hacker", "Des jumeaux", "Un ennemi caché", "Un ermite", "Un robot animal", "Un monstre apprivoisé", "Un monde", "Une ruche extra-terrestre", "Un drone", "Un être immatériel", "Un cyber-chevalier"],
         ["Doté de pouvoirs", "Traitre", "Invisible", "Invulnérable", "Être artificiel", "Génial", "Prit de remords", "Injuste", "Terrifiant", "Adorable", "Dangereux", "Cloné", "Fou", "Inaccessible", "Caché", "Recherché", "Inexploré", "Secret", "Interfacé", "Transhumain", "Modifié génétiquement", "Réalité virtuelle", "Anomalie temporelle", "Intelligence collective", "Univers parallèles"],

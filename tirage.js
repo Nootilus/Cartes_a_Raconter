@@ -42,7 +42,7 @@ function tirerCartes() {
         .then(data => {
             const listesDeCartes = data.listesDeCartes;
             const univers = data.univers;
-            resultmail += `Deck : ` + univers +` ; `;
+            resultmail += `Deck : ` + univers[0] +` ; `;
 
             // Cloner les catégories dans des tableaux temporaires
             tPerso = [];
@@ -86,7 +86,7 @@ function tirerCartes() {
             // Afficher le deck choisi
             const choixUnivers = document.createElement('h3');
             choixUnivers.className = "univers";
-            choixUnivers.innerHTML = 'Dans l’univers '+ univers;
+            choixUnivers.innerHTML = '<img  class="pictos" src="svg/'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />&nbsp;Dans l’univers '+ univers[0] +'&nbsp;<img  class="pictos" src="svg/'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />';
             resultDiv.appendChild(choixUnivers);
 
             // Tirer les cartes pour chaque personne
@@ -145,23 +145,23 @@ function tirerCartes() {
                         <tr>
                             <td class="celParticipant celPicto"><img class="pictos" src="svg/participant_01.svg" alt="Participant" title="Le participant"></td>
                             <td class="celTab celParticipant">${prenoms[i].toLowerCase()}</td>
-                            <td class="celPicto"><img class="pictos" src="svg/personnage_01.svg" alt="Personnage" title="Le personnage"></td>
+                            <td class="celPicto"><img class="pictos" src="svg/personnage.svg" alt="Personnage" title="Le personnage"></td>
                             <td class="celTab">${rPerso}</td> <!-- Carte Personnage -->
-                            <td class="celPicto"><img class="pictos" src="svg/aspect_01.svg" alt="Aspect" title="L’aspect"></td>
+                            <td class="celPicto"><img class="pictos" src="svg/aspect.svg" alt="Aspect" title="L’aspect"></td>
                             <td class="celTab">${rAspect}</td> <!-- Carte Aspect -->
                         </tr>
                         <tr>
-                            <td class="celPicto"><img class="pictos" src="svg/objet_01.svg" alt="Objet" title="L’objet"></td>
+                            <td class="celPicto"><img class="pictos" src="svg/objet.svg" alt="Objet" title="L’objet"></td>
                             <td class="celTab">${rObjet}</td> <!-- Carte Objet -->
-                            <td class="celPicto"><img class="pictos" src="svg/lieu_01.svg" alt="Lieu" title="Le lieu"></td>
+                            <td class="celPicto"><img class="pictos" src="svg/lieu.svg" alt="Lieu" title="Le lieu"></td>
                             <td class="celTab">${rLieu}</td> <!-- Carte Lieu -->
-                            <td class="celPicto"><img class="pictos" src="svg/evenement_01.svg" alt="Événement" title="L'événement"></td>
+                            <td class="celPicto"><img class="pictos" src="svg/evenement.svg" alt="Événement" title="L'événement"></td>
                             <td class="celTab">${rEvent}</td> <!-- Carte Événement -->
                         </tr>
                     </table>
                     <table>
                         <tr>
-                            <td class="celChute celPicto"><img class="pictos" src="svg/chute_01.svg" alt="Fin de l’histoire" title="La fin de l’histoire"></td>
+                            <td class="celChute celPicto"><img class="pictos" src="svg/chute.svg" alt="Fin de l’histoire" title="La fin de l’histoire"></td>
                             <td class="celChute">${rChute}</td> <!-- Carte Fin d'histoire -->
                         </tr>
                     </table>
@@ -224,7 +224,7 @@ function envoyerMail() {
   \_____(_)|_(_)\_____(_)_|  \_(_)
     Générateur de Tirages de Cartes à Raconter©™®                            
                                   
-Version 0.7b — Décembre 2023
+Version 0.7d — Décembre 2023
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
 Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 

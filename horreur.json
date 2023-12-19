@@ -1,5 +1,5 @@
 {
-    "univers": "Horreur",
+    "univers": ["Horreur", "horreur"],
     "listesDeCartes": [
         ["Un savant fou", "Un chasseur de monstres", "Un possédé", "Un sorcier maléfique", "Un démon", "L’antéchrist", "Un tueur en série", "Un cannibale", "Un esprit vengeur", "Un nécromancien", "Une poupée possédée", "Un zombie", "Un cultiste", "Un prêtre fou", "Un gardien de cimetière", "Une succube", "Un vampire", "Un revenant", "Un monstre", "Une créature de cauchemar", "Un cauchemar", "Une entité pandimentionnelle", "Un symbiote extra-terrestre", "Un archéologue", "Un héritier"],
         ["Obscur", "Dément", "Hanté", "Mystérieux", "Monstrueux", "Sanglant", "Maléfique", "Labyrinthique", "Infernal", "Décomposé", "Mort", "Possédé", "Démoniaque", "Torturé", "Fantomatique", "Spectral", "Putride", "Maudit", "Cauchemardesque", "Horrible", "Ancien", "Atroce", "Incompréhensible", "Oublié", "Noyé"],

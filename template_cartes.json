@@ -1,5 +1,5 @@
 {
-    "univers": "Nom de l’univers",
+    "univers": ["Nom de l’univers", "fichier (json)"],
     "listesDeCartes": [
         ["Personnages", "25 cartes attendues", "…", "…"],
         ["Aspect (adjectifs)", "25 cartes attendues", "…", "…"],

@@ -1,5 +1,5 @@
 {
-    "univers": "Steampunk",
+    "univers": ["Steampunk", "steampunk"],
     "listesDeCartes": [
         ["Un inventeur", "Un capitaine de dirigeable", "Un détective", "Un robot à vapeur", "Un explorateur", "Un horloger", "Un médecin", "Un gentleman aventurier", "Un voleur", "Un mécanicien de locomotive", "Un soldat en armure à vapeur", "Une dame de la belle société", "Un marchand de mécanismes", "Un contrebandier", "Un alchimiste", "Un aviateur", "Un espion", "Un forgeron", "Un sage érudit", "Un monsieur loyal", "Un luddite", "Un prospecteur", "Un révolutionnaire", "Un prêtre de la machine", "Un gardien de ménagerie"],
         ["Éthéré", "Riveté", "Métallique", "Lunaire", "Fou", "Rêveur", "Drogué", "Portant une prothèse", "Intrépide", "Charmeur", "Mystérieux", "Masqué", "Aveugle", "Perdu", "Géant", "Trompeur", "Partiellement mécanique", "À vapeur", "Électrique", "Mécanique", "Étourdi", "Énigmatique", "Mégalomane", "Recherché", "Traitre"],

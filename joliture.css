@@ -23,6 +23,7 @@ body {
   grid-area: Entete;
   justify-self: center; 
   align-self: center;
+  text-align: center;
   /* pour localisation
   background-color: #ff7f7f; */
 }
@@ -31,6 +32,7 @@ body {
   grid-area: BasPage;
   justify-self: center; 
   align-self: center; 
+  text-align: center;
   /* pour localisation
   background-color: #8c7fff; */
 }

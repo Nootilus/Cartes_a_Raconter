@@ -10,7 +10,7 @@ function tirerCartes() {
     const formTirage = document.getElementById('formTirage');
     const rebootBTN = document.getElementById('reboot');
     const goMail = document.getElementById('goMail');
-    const cheminFichierJson = choixFichierJson.value; // Récupère le chemin du fichier sélectionné
+    const cheminFichierJson = "decks/" + choixFichierJson.value; // Récupère le chemin du fichier sélectionné
 
 
     // Vérifiez que le nombre de personnes est valide
@@ -198,19 +198,19 @@ function reinitialiserPage() {
     location.reload();
 }
 
-function envoyerMail() {
-    var dateDuJour = new Date();
-    var jour = ('0' + dateDuJour.getDate()).slice(-2);
-    var mois = ('0' + (dateDuJour.getMonth() + 1)).slice(-2);
-    var annee = dateDuJour.getFullYear();
+const envoyerMail = () => {
+    const dateDuJour = new Date();
+    const jour = ('0' + dateDuJour.getDate()).slice(-2);
+    const mois = ('0' + (dateDuJour.getMonth() + 1)).slice(-2);
+    const annee = dateDuJour.getFullYear();
 
-    var dateFormattee = jour + '/' + mois + '/' + annee;
+    const dateFormattee = `${jour}/${mois}/${annee}`;
 
-    var destinataire = 'scribulerie@nootilus.com';
-    var sujet = 'Cartes du ' + dateFormattee;
-    var corps = 'Tirage du '+ dateFormattee +' : '+ resultmail;
+    const destinataire = 'scribulerie@nootilus.com';
+    const sujet = `Cartes du ${dateFormattee}`;
+    const corps = `Tirage du ${dateFormattee} : ${resultmail}`;
 
-    var mailtoLink = 'mailto:' + destinataire + '?subject=' + encodeURIComponent(sujet) + '&body=' + encodeURIComponent(corps);
+    const mailtoLink = `mailto:${destinataire}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
 
     window.location.href = mailtoLink;
 }
@@ -224,7 +224,7 @@ function envoyerMail() {
   \_____(_)|_(_)\_____(_)_|  \_(_)
     Générateur de Tirages de Cartes à Raconter©™®                            
                                   
-Version 0.7d — Décembre 2023
+Version 0.8b — Janvier 2024
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
 Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 

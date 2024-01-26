@@ -14,7 +14,8 @@
     <img src="img_readme/noot_scribulerie.png" alt="Logo" width="120" height="120">
   </a>
 
-<h3 align="center">Générateur aléatoire de cartes à histoires</h3>
+<h3 align="center">Univers à la Carte</h3>
+<h4 align="center">Générateur aléatoire de cartes à histoires</h4>
 
   <p align="center">
     Un générateur de tirages de cartes à raconter des histoires pour atelier d’écriture et jeux d’écriture à contraintes.
@@ -128,7 +129,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Utilisation
 
-### Fonctionnement du site en version v0.6
+### Fonctionnement du site en version v0.7
 
 1. Dans le menu déroulant, on choisit le set de cartes à utiliser.
 2. On choisi si les cartes sont uniques (réaliste) ou clonées (infinies)
@@ -162,6 +163,17 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Fait & À faire
 
 ### Journal de bord
+
+--- Version 0.8b
+- Déplacement des decks de cartes dans un dossier `decks/`
+  - Parce qu’au bout d’un moment, hein, c’est plus claire comme ça.
+
+--- Version 0.8
+- Il a un nom ! :)
+- Ajout de l’_openGraph_ dans `index.html`
+- Ajout de l’affichage des pictos d’univers dans le tableau des résultats
+  - Légère Modification de la structure des `json` pour afficher les pictos
+   
 
 --- Version 0.7
 - Amélioration de l’interface, mais c’est pas encore ça (enfin, un peu quand même).
@@ -209,6 +221,8 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [ ] Fantasy
     - [X] Horreur
     - [ ] Polar
+    - [ ] Cyberpunk (thanks E-Mae)
+    - [ ] Lovecraftien (merci Lou)
 
 Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.
 
@@ -249,7 +263,7 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 
 * [Olivier Gechter](https://gechter.org/blog/) – Très tôt beta-testeur
 * [Les participants de la Scribulerie](https://scribulerie.nootilus.com/) – Les cobayes consentants
-* []()
+* [E-Mae](#) – Création de la liste Cyberpunk
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 

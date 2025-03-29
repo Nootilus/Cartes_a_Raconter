@@ -229,10 +229,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [X] Steampunk
     - [X] Fantasy
     - [X] Horreur
-    - [ ] Polar (en cours - manquent 25 fins)
+    - [X] Polar
     - [ ] Cyberpunk (thanks E-Mae) (en cours - que les persos)
     - [ ] Lovecraftien (merci Lou) (en cours - manquent 45 fins)
-    - [ ] Quotidien
+    - [ ] Quotidien (en cours - manquent 55 fins)
 
 Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.
 

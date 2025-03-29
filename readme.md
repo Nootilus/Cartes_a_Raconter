@@ -169,6 +169,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - Ajout d’un bouton qui permet l’affichage propre et sobre des résultats dans une page séparée
   - D’abord pour pouvoir les copicoller et les imprimer avec une imprimante mobile
   - Ensuite pour améliorer l’affichage HTML de ces résultats dans un futur… futuristique.
+- Ajout du deck _Fantasy_
 
 --- Version 0.8b
 - Déplacement des decks de cartes dans un dossier `decks/`
@@ -224,11 +225,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Responsiveness
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers
-    - [ ] Fantasy
+    - [X] Science-fiction
+    - [X] Steampunk
+    - [X] Fantasy
     - [X] Horreur
-    - [ ] Polar
-    - [ ] Cyberpunk (thanks E-Mae)
-    - [ ] Lovecraftien (merci Lou)
+    - [ ] Polar (en cours - manquent 25 fins)
+    - [ ] Cyberpunk (thanks E-Mae) (en cours - que les persos)
+    - [ ] Lovecraftien (merci Lou) (en cours - manquent 45 fins)
+    - [ ] Quotidien
 
 Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.
 

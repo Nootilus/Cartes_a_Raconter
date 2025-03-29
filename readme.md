@@ -23,7 +23,7 @@
     <a href="https://github.com/Nootilus/Cartes_a_Raconter"><strong>La doc »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">Accès à la démo</a>
+    <a href="http://test.nootilus.com/cartes/">Accès à la démo</a>
     ·
     <a href="https://github.com/Nootilus/Cartes_a_Raconter/issues">Relever un bug</a>
     ·

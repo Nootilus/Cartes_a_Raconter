@@ -42,7 +42,8 @@ function tirerCartes() {
         .then(data => {
             const listesDeCartes = data.listesDeCartes;
             const univers = data.univers;
-            resultmail += `Deck : ` + univers[0] +` ; `;
+            resultmail += `<b>Deck : ` + univers[0] +`</b><br>`;
+            resultmail += '<br><br><hr width=25% /><br><br>';
 
             // Cloner les catégories dans des tableaux temporaires
             tPerso = [];
@@ -143,7 +144,7 @@ function tirerCartes() {
                 participantDiv.innerHTML = `
                     <table>
                         <tr>
-                            <td class="celParticipant celPicto"><img class="pictos" src="svg/participant_01.svg" alt="Participant" title="Le participant"></td>
+                            <td class="celParticipant celPicto"><img class="pictos" src="svg/participant.svg" alt="Participant" title="Le participant"></td>
                             <td class="celTab celParticipant">${prenoms[i].toLowerCase()}</td>
                             <td class="celPicto"><img class="pictos" src="svg/personnage.svg" alt="Personnage" title="Le personnage"></td>
                             <td class="celTab">${rPerso}</td> <!-- Carte Personnage -->
@@ -172,14 +173,14 @@ function tirerCartes() {
                 resultDiv.appendChild(participantDiv);
 
                 // Étape 3 – Remplir le corps du mail
-                resultmail += 'Participant : ' + prenoms[i] +` ; `
-                resultmail += 'Personnage : ' + rPerso +` ; `
-                resultmail += 'Aspect : ' + rAspect +` ; `
-                resultmail += 'Objet : ' + rObjet +` ; `
-                resultmail += 'Lieu : ' + rLieu +` ; `
-                resultmail += 'Événement : ' + rEvent +` ; `
-                resultmail += 'Fin d’histoire : ' + rChute +` ; `
-                resultmail += ' /// ';
+                resultmail += '<i>Participant</i> : <b>' + prenoms[i] +`</b><br>`
+                resultmail += '<i>Personnage</i> : ' + rPerso +`<br>`
+                resultmail += '<i>Aspect</i> : ' + rAspect +`<br>`
+                resultmail += '<i>Objet</i> : ' + rObjet +`<br>`
+                resultmail += '<i>Lieu</i> : ' + rLieu +`<br>`
+                resultmail += '<i>Événement</i> : ' + rEvent +`<br>`
+                resultmail += '<i>Fin d’histoire</i> : ' + rChute +`<br>`
+                resultmail += '<br><br><hr width=25% /><br><br>';
             }
 
             // Affiche la DIV des résultats
@@ -212,7 +213,14 @@ const envoyerMail = () => {
 
     const mailtoLink = `mailto:${destinataire}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
 
-    window.location.href = mailtoLink;
+    //window.location.href = mailtoLink;
+    // Ouvrir une nouvelle fenêtre
+    var nouvelleFenetre = window.open("", "_blank");
+            
+    // Écrire dans le document de la nouvelle fenêtre
+    nouvelleFenetre.document.open();
+    nouvelleFenetre.document.write(resultmail);
+    nouvelleFenetre.document.close();
 }
 
 /*
@@ -224,7 +232,7 @@ const envoyerMail = () => {
   \_____(_)|_(_)\_____(_)_|  \_(_)
     Générateur de Tirages de Cartes à Raconter©™®                            
                                   
-Version 0.8b — Janvier 2024
+Version 0.8c — Mars 2025
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
 Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 

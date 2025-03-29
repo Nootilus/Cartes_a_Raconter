@@ -164,6 +164,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### Journal de bord
 
+--- Version 0.8c
+- Après beauuuucoup trop de tests foireux, on écarte (momentanément ?) l’export PDF des résultats
+- Ajout d’un bouton qui permet l’affichage propre et sobre des résultats dans une page séparée
+  - D’abord pour pouvoir les copicoller et les imprimer avec une imprimante mobile
+  - Ensuite pour améliorer l’affichage HTML de ces résultats dans un futur… futuristique.
+
 --- Version 0.8b
 - Déplacement des decks de cartes dans un dossier `decks/`
   - Parce qu’au bout d’un moment, hein, c’est plus claire comme ça.

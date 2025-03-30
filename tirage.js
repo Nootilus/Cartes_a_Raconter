@@ -87,7 +87,7 @@ function tirerCartes() {
             // Afficher le deck choisi
             const choixUnivers = document.createElement('h3');
             choixUnivers.className = "univers";
-            choixUnivers.innerHTML = '<img  class="pictos" src="svg/'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />&nbsp;Dans l’univers '+ univers[0] +'&nbsp;<img  class="pictos" src="svg/'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />';
+            choixUnivers.innerHTML = '<img  class="pictos" src="svg/ico_'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />&nbsp;Dans l’univers '+ univers[0] +'&nbsp;<img  class="pictos" src="svg/ico_'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />';
             resultDiv.appendChild(choixUnivers);
 
             // Tirer les cartes pour chaque personne

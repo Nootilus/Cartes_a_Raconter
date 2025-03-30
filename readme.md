@@ -230,9 +230,13 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [X] Fantasy
     - [X] Horreur
     - [X] Polar
-    - [ ] Cyberpunk (thanks E-Mae) (en cours - que les persos)
-    - [ ] Lovecraftien (merci Lou) (en cours - manquent 45 fins)
-    - [ ] Quotidien (en cours - manquent 55 fins)
+    - [ ] Cyberpunk (en cours)
+      - Manquent 55 fins
+    - [ ] Lovecraftien (merci Lou) (en cours)
+      - Manquent 25 fins
+    - [ ] Quotidien (en cours)
+      - Manquent 50 fins
+    - [ ] Far West
 
 Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.
 
@@ -243,7 +247,8 @@ Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour
 
 Ce projet est composé à peu près de :
 - 10 à 20 % de travail fourni par votre serviteur
-- 80 à 90 % de code généré par l’ami ChatGPT 3.5
+- 80 à 90 % de code généré par l’ami *ChatGPT* 3.5
+- Après la version 0.8a, c’est *Perplexity* qui a pris le relais
 
 La majorité des pictos ont été créés par [_Icon54_](https://thenounproject.com/icon54app/), proposés sur le site [**Noun Project**](https://thenounproject.com/browse/collection-icon/basic-solid-icons-62704/?p=1) dans la collection correspondante.
 
@@ -273,7 +278,6 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 
 * [Olivier Gechter](https://gechter.org/blog/) – Très tôt beta-testeur
 * [Les participants de la Scribulerie](https://scribulerie.nootilus.com/) – Les cobayes consentants
-* [E-Mae](#) – Création de la liste Cyberpunk
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 

@@ -5,7 +5,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GPL3 License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -231,7 +230,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [X] Horreur
     - [X] Polar
     - [ ] Cyberpunk (en cours)
-      - Manquent 55 fins
+      - Manquent 35 fins
     - [ ] Lovecraftien (merci Lou) (en cours)
       - Manquent 25 fins
     - [ ] Quotidien (en cours)

@@ -148,7 +148,7 @@ function tirerCartes() {
                             <td class="celTab celParticipant">${prenoms[i].toLowerCase()}</td>
                             <td class="celPicto"><img class="pictos" src="svg/personnage.svg" alt="Personnage" title="Le personnage"></td>
                             <td class="celTab">${rPerso}</td> <!-- Carte Personnage -->
-                            <td class="celPicto"><img class="pictos" src="svg/aspect.svg" alt="Aspect" title="L’aspect"></td>
+                            <td class="celPicto"><img class="pictos" src="svg/aspect.svg" alt="Aspect" title="Le caractère"></td>
                             <td class="celTab">${rAspect}</td> <!-- Carte Aspect -->
                         </tr>
                         <tr>
@@ -175,7 +175,7 @@ function tirerCartes() {
                 // Étape 3 – Remplir le corps du mail
                 resultmail += '<i>Participant</i> : <b>' + prenoms[i] +`</b><br>`
                 resultmail += '<i>Personnage</i> : ' + rPerso +`<br>`
-                resultmail += '<i>Aspect</i> : ' + rAspect +`<br>`
+                resultmail += '<i>Caractère</i> : ' + rAspect +`<br>`
                 resultmail += '<i>Objet</i> : ' + rObjet +`<br>`
                 resultmail += '<i>Lieu</i> : ' + rLieu +`<br>`
                 resultmail += '<i>Événement</i> : ' + rEvent +`<br>`

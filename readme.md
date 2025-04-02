@@ -128,7 +128,22 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Utilisation
 
-### Fonctionnement du site en version v0.7
+### Utilisation
+
+Dans le cadre d’un atelier d’écriture, l’utilité des Univers à la Carte est simple ; proposer aux participants des éléments de récit à utiliser et imbriquer à leur convenance, et une chute vers laquelle leur récit doit aboutir.
+
+Les cartes sont donc de deux types :
+  - Les éléments du récit
+  - Les fins d’histoires
+
+Les éléments du récit sont de cinq types différents :
+  - Un personnage _(exemples : Un prince charmant, un mercenaire de l’espace, un flic sympa…)_
+  - Un caractère _(exemples : anonyme, beau, perdu…)_
+  - Un objet _(exemples : une potion magique, un disque dur, un journal intime…)_
+  - Un lieu _(exemples : un appartement, un vaisseau spatial, une grotte…)_
+  - Un événement _(exemples : une disparition, une trahison, une fête…)_
+
+### Fonctionnement du site en version v0.8
 
 1. Dans le menu déroulant, on choisit le set de cartes à utiliser.
 2. On choisi si les cartes sont uniques (réaliste) ou clonées (infinies)
@@ -141,15 +156,17 @@ This is an example of how to list things you need to use the software and how to
 
 _Note_ : Le choix des cartes uniques ou clonées détermine si le tirage se comporte de manière réaliste ou non. Dans le cas réaliste –à l’image d’un véritable jeu de cartes– lorsqu’une carte est tirée, elle ne peut plus se trouver dans le paquet restant à distribuer. Chaque carte est alors unique. Dans le cas contraire, les cartes sont _clonables_, c’est à dire que peu importe si une carte a été tirée, elle reste dans la liste des cartes disponibles.
 
+<!--
 ### S’emparer du projet
 
-===> À faire :
+(Sous réserve, à vérifier par un sachant qui sait)
+
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
+-->
 <!--
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -169,6 +186,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
   - D’abord pour pouvoir les copicoller et les imprimer avec une imprimante mobile
   - Ensuite pour améliorer l’affichage HTML de ces résultats dans un futur… futuristique.
 - Ajout du deck _Fantasy_
+- Ajout du deck _Policier_
+- Ajout du deck _Cyberpunk (non complet)_
+- Ajout du deck _Lovecraft (non complet)_
+- Changement du terme `aspect` (peu clair) en `caractère`
 
 --- Version 0.8b
 - Déplacement des decks de cartes dans un dossier `decks/`
@@ -219,7 +240,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [X] Amélioration de l’interface
 - [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
-- [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
+- [ ] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
   - [ ] Améliorer le système de mail
 - [ ] Responsiveness
 - [ ] Possibilité de mélanger les univers ?
@@ -230,7 +251,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
     - [X] Horreur
     - [X] Polar
     - [ ] Cyberpunk (en cours)
-      - Manquent 35 fins
+      - Manquent 20 fins
     - [ ] Lovecraftien (merci Lou) (en cours)
       - Manquent 25 fins
     - [ ] Quotidien (en cours)
@@ -277,6 +298,7 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 
 * [Olivier Gechter](https://gechter.org/blog/) – Très tôt beta-testeur
 * [Les participants de la Scribulerie](https://scribulerie.nootilus.com/) – Les cobayes consentants
+* E-Mae pour le deck Cyberpunk
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 

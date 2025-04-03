@@ -1,0 +1,238 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #09060d;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    color: #d9bfa9
+}
+
+.Principal {
+  display: grid;
+  grid-template-columns: 0.2fr 2.2fr 0.2fr;
+  grid-template-rows: 0.3fr 2.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Entete Entete Entete"
+    ". Contenu ."
+    "BasPage BasPage BasPage";
+}
+
+.Entete {
+  grid-area: Entete;
+  justify-self: center; 
+  align-self: center;
+  text-align: center;
+  /* pour localisation
+  background-color: #ff7f7f; */
+}
+
+.BasPage {
+  grid-area: BasPage;
+  justify-self: center; 
+  align-self: center; 
+  text-align: center;
+  /* pour localisation
+  background-color: #8c7fff; */
+}
+
+.Contenu {
+  grid-area: Contenu;
+  /* pour localisation
+  background-color: #7fffaa; */
+}
+
+#formTirage {
+  display: block;
+  width: 60%;
+  background-color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  /*transform: translate(-30%);*/
+}
+
+h1 { color: #333 }
+h3 { text-align: center; }
+
+label { margin-right: 20px; }
+
+input, select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #201226;
+  border-radius: 4px;
+}
+
+#cartesUniques {
+  margin-right: 10px;
+  flex-direction: row;
+}
+
+.leChoix {
+  height: 30px;
+  padding: 10px;
+}
+
+.leChoix .topCoolCheckbox {
+  appearance: none;
+  background-color: #201226;
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+}
+
+.leChoix .topCoolCheckbox::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.leChoix .topCoolCheckbox,
+.leChoix .topCoolCheckbox::after {
+  transition: all 100ms ease-out;
+}
+
+.leChoix .topCoolCheckbox::after {
+  background-color: #000;
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.leChoix input[type=checkbox] {
+  cursor: default;
+}
+
+.leChoix .topCoolCheckbox:hover {
+  background-color: #201226;
+  transition-duration: 0s;
+}
+
+.leChoix .topCoolCheckbox:checked {
+  background-color: #bf9180;
+}
+
+.leChoix .topCoolCheckbox:checked::after {
+  background-color: #000;
+  left: 13px;
+}
+
+.leChoix :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.leChoix .topCoolCheckbox:checked:hover {
+  background-color: #734d49;
+}
+
+.leChoix .label { height: 14px; }
+
+#tirageBtn {
+  background-color: #bf9180;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pictos {
+  padding: 0px 8px 3.5px 0px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#reboot, #goMail {
+  margin: 10px auto;
+  display: none;
+}
+
+/* Style pour les champs de saisie des prénoms */
+.prenom-input {
+  margin: 5px;
+  padding: 5px;
+}
+
+#result {
+  display: none;
+  width: 80%;
+  margin: 0 auto; /* Centre horizontalement */
+}
+
+.participant-block { text-align: center; }
+
+#leParticipant { text-transform: capitalize; }
+
+table {
+  width: 100%; /* Remplit la largeur de la div parente */
+  border-collapse: collapse; /* Supprime les espaces entre les cellules */
+}
+
+th, td {
+  padding: 10px; /* Ajoute un espace autour du contenu des cellules */
+  border: 1px solid #201226; /* Ajoute une bordure légère entre les cellules */
+}
+
+.celTab {
+  width: 34%;
+  word-wrap: break-word;  
+  text-align: left;
+  padding-left: 10px;
+}
+
+.celPicto { width: 40px; }
+
+.celPicto img {
+  width: 32px;
+  height: 32px;
+  cursor: help;
+}
+
+.celParticipant {
+  background-color: #734d49;
+  text-transform: capitalize;
+}
+
+.celChute { background-color: #bf9180; }
+
+/*
+   _____ _______ _____   _____    
+  / ____|__   __/ ____| |  __ \   
+ | |  __   | | | |      | |__) |  
+ | | |_ |  | | | |      |  _  /   
+ | |__| |_ | |_| |____ _| | \ \ _ 
+  \_____(_)|_(_)\_____(_)_|  \_(_)
+    Générateur de Tirages de Cartes à Raconter©™®                            
+                                  
+Version 0.8c — Mars 2025
+Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
+Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
+
+Fichier : univers_smobre.css
+
+*/

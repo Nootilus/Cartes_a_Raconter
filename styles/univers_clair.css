@@ -1,11 +1,26 @@
+/** Définition des variables couleurs **/
+:root {
+  --couleur_fond: #dafffa;
+  --fond_pur: #ffffff;
+  --couleur_texte: #3d4746; 
+  --couleur_titre: #556362;
+  --couleur_fondClair: #7ea18f;
+  --couleur_accent: #adc0b6;
+  --couleur_bordures: #c0f0e8;
+  --couleur_pictos: #ff0000;
+}
+
+
+/** Da CSS **/
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #dafffa;
+    background-color: var(--couleur_fond);
     margin: 0;
     padding: 0;
     display: grid;
     height: 100vh;
-    color: #3d4746
+    color: var(--couleur_texte)
 }
 
 .Principal {
@@ -41,7 +56,7 @@ body {
 #formTirage {
   display: block;
   width: 60%;
-  background-color: #fff;
+  background-color: var(--fond_pur);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -51,7 +66,58 @@ body {
   margin-right: auto;
 }
 
-h1 { color: #3d4746 }
+.participant-block-test {
+  display: grid;
+  background-color: #7ea18f;
+
+  grid-template-columns: 55px 135px 55px 135px 55px 135px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px;
+  gap: 10px;
+  justify-items: center;
+
+  height: 120px;
+}
+
+.participant-chute-test {
+  display: grid;
+  background-color: #56ffa8;
+
+  grid-template-columns: 60px 540px;
+  grid-template-rows: 60px 60px;
+  grid-auto-flow: row;
+  justify-items: center;
+
+  height: 60px;
+}
+
+.participant-block-test .picto, .participant-chute-test .picto {
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+}
+
+.participant-block-test .picto img, .participant-chute-test .picto img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.participant-block-test .auteur {
+  background-color: var(--couleur_bordures);
+}
+
+.participant-block-test .auteur > p {
+  font-weight: 600;
+}
+
+.participant-block-test p.resultatTxt,
+.participant-chute-test p.resultatTxt {
+  text-align: left;
+  margin: 0 auto;
+  padding: 6px 0 0 8px;
+}
+
+h1 { color: var(--couleur_titre) }
 h3 { text-align: center; }
 
 label { margin-right: 20px; }
@@ -59,7 +125,7 @@ label { margin-right: 20px; }
 input, select {
   margin-bottom: 10px;
   padding: 8px;
-  border: 1px solid #c0f0e8;
+  border: 1px solid var(--couleur_bordures);
   border-radius: 4px;
 }
 
@@ -110,7 +176,7 @@ input, select {
 
 .leChoix .topCoolCheckbox::after, 
 .leChoixCSS .topCoolCheckbox::after {
-  background-color: #fff;
+  background-color: var(--fond_pur);
   border-radius: 50%;
   content: "";
   height: 14px;
@@ -127,18 +193,18 @@ input, select {
 
 .leChoix .topCoolCheckbox:hover,
 .leChoixCSS .topCoolCheckbox:hover {
-  background-color: #c0f0e8;
+  background-color: var(--couleur_bordures);
   transition-duration: 0s;
 }
 
 .leChoix .topCoolCheckbox:checked,
 .leChoixCSS .topCoolCheckbox:checked {
-  background-color: #7ea18f;
+  background-color: var(--couleur_fondClair);
 }
 
 .leChoix .topCoolCheckbox:checked::after,
 .leChoixCSS .topCoolCheckbox:checked::after {
-  background-color: #fff;
+  background-color: var(--fond_pur);
   left: 13px;
 }
 
@@ -149,13 +215,13 @@ input, select {
 
 .leChoix .topCoolCheckbox:checked:hover,
 .leChoixCSS .topCoolCheckbox:checked:hover {
-  background-color: #3d4746;
+  background-color: var(--couleur_texte);
 }
 
 .leChoix .label, .leChoixCSS .label { height: 14px; }
 
 #tirageBtn {
-  background-color: #c0f0e8;
+  background-color: var(--couleur_bordures);
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -165,8 +231,13 @@ input, select {
 .pictos {
   padding: 0px 8px 3.5px 0px;
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.picto {
+  width: 64px;
+  height: 64px;
 }
 
 button {
@@ -223,11 +294,11 @@ th, td {
 }
 
 .celParticipant {
-  background-color: #c0f0e8;
+  background-color: var(--couleur_bordures);
   text-transform: capitalize;
 }
 
-.celChute { background-color: #adc0b6; }
+.celChute { background-color: var(--couleur_accent); }
 
 /** Responsiverie **/
 

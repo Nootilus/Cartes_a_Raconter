@@ -17,8 +17,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Univers à la Carte</title>
-    <link rel="stylesheet" href="univers_clair.css">
-    <!-- <link rel="stylesheet" href="univers_sombre.css"> -->
+    <link rel="stylesheet" href="styles/univers_clair.css" id="lienTheme">
     <script src="tirage.js"></script>
 </head>
 <body>
@@ -69,8 +68,12 @@
         </div>
 
         <div class="BasPage">
-            <p>&copy 2023, 2025 – <a href="https://www.nootilus.com/" target="_blank">Vincent Corlaix</a> — Version 0.8c (mars 2025)</p>
+            <p>&copy 2023, 2025 – <a href="https://www.nootilus.com/" target="_blank">Vincent Corlaix</a> — Version 0.8d (avril 2025)</p>
             <p><a href="https://github.com/Nootilus/Cartes_a_Raconter" target="_blank">Github du projet</a></p>
+            <div class="leChoix">
+                <input type="checkbox" id="SelectTheme" class="topCoolCheckbox" name="themeSelect" />
+                <label for="SelectTheme"> Thème</label>
+            </div>
         </div>
     </div>
 
@@ -108,7 +111,7 @@
   \_____(_)|_(_)\_____(_)_|  \_(_)
     Générateur de Tirages de Cartes à Raconter©™®                            
                                   
-Version 0.8c — Mars 2025
+Version 0.8d — Avril 2025
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
 Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 

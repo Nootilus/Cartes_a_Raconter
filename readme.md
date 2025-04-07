@@ -180,6 +180,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 ### Journal de bord
 
+--- Version 0.8d
+- Ajout (pénible) d’un thème CSS sombre et d’un bouton basculant entre clair et sombre
+- Tentative de rendre le truc élastique (_responsive_) pour tablettes et smartphones.
+
 --- Version 0.8c
 - Après beauuuucoup trop de tests foireux, on écarte (momentanément ?) l’export PDF des résultats
 - Ajout d’un bouton qui permet l’affichage propre et sobre des résultats dans une page séparée

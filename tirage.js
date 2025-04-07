@@ -1,6 +1,29 @@
 // Variables globales
 resultmail = "";
 
+// Sélecteur de thèmes CSS
+
+document.addEventListener('DOMContentLoaded', function () {
+    const themeToggle = document.getElementById('SelectTheme'); // Utilisez le bon ID
+  
+    if (themeToggle) { // Vérifiez que l'élément existe
+      themeToggle.addEventListener('change', function () {
+        const themeLink = document.getElementById('lienTheme');
+        if (themeToggle.checked) {
+          themeLink.setAttribute('href', 'styles/univers_sombre.css');
+          localStorage.setItem('theme', 'sombre');
+        } else {
+          themeLink.setAttribute('href', 'styles/univers_clair.css');
+          localStorage.setItem('theme', 'clair');
+        }
+      });
+    } else {
+      console.error("L'élément avec l'ID 'SelectTheme' est introuvable.");
+    }
+  });
+
+// Le moteur du tirage…
+
 function tirerCartes() {
     const nombreDePersonnes = document.getElementById('nombreDePersonnes').value;
     const cartesUniques = document.getElementById('cartesUniques').checked;
@@ -223,6 +246,7 @@ const envoyerMail = () => {
     nouvelleFenetre.document.close();
 }
 
+
 /*
    _____ _______ _____   _____    
   / ____|__   __/ ____| |  __ \   
@@ -232,7 +256,7 @@ const envoyerMail = () => {
   \_____(_)|_(_)\_____(_)_|  \_(_)
     Générateur de Tirages de Cartes à Raconter©™®                            
                                   
-Version 0.8c — Mars 2025
+Version 0.8d — Avril 2025
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
 Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 

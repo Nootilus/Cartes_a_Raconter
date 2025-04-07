@@ -244,7 +244,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 - [ ] Ajouter une page d’explications / mode d’emploi
 - [X] Amélioration de l’interface
-  - [ ] Proposer thème clair & sombre
+  - [X] Proposer thème clair & sombre
 - [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [ ] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
   - [ ] Améliorer le système de mail

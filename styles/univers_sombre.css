@@ -80,9 +80,15 @@ input, select {
   padding: 10px;
 }
 
-.leChoix .topCoolCheckbox {
+.leChoixCSS {
+  height: 30px;
+  /*padding: 10px;*/
+}
+
+.leChoix .topCoolCheckbox,
+.leChoixCSS .topCoolCheckbox {
   appearance: none;
-  background-color: #201226;
+  background-color: #86dedb;
   border-radius: 72px;
   border-style: none;
   flex-shrink: 0;
@@ -92,7 +98,8 @@ input, select {
   width: 30px;
 }
 
-.leChoix .topCoolCheckbox::before {
+.leChoix .topCoolCheckbox::before,
+.leChoixCSS .topCoolCheckbox::before {
   bottom: -6px;
   content: "";
   left: -6px;
@@ -102,12 +109,15 @@ input, select {
 }
 
 .leChoix .topCoolCheckbox,
-.leChoix .topCoolCheckbox::after {
+.leChoix .topCoolCheckbox::after,
+.leChoixCSS .topCoolCheckbox,
+.leChoixCSS .topCoolCheckbox::after {
   transition: all 100ms ease-out;
 }
 
-.leChoix .topCoolCheckbox::after {
-  background-color: #000;
+.leChoix .topCoolCheckbox::after, 
+.leChoixCSS .topCoolCheckbox::after {
+  background-color: #fff;
   border-radius: 50%;
   content: "";
   height: 14px;
@@ -117,33 +127,39 @@ input, select {
   width: 14px;
 }
 
-.leChoix input[type=checkbox] {
+.leChoix input[type=checkbox], 
+.leChoixCSS input[type=checkbox] {
   cursor: default;
 }
 
-.leChoix .topCoolCheckbox:hover {
-  background-color: #201226;
+.leChoix .topCoolCheckbox:hover,
+.leChoixCSS .topCoolCheckbox:hover {
+  background-color: #c0f0e8;
   transition-duration: 0s;
 }
 
-.leChoix .topCoolCheckbox:checked {
-  background-color: #bf9180;
+.leChoix .topCoolCheckbox:checked,
+.leChoixCSS .topCoolCheckbox:checked {
+  background-color: #7ea18f;
 }
 
-.leChoix .topCoolCheckbox:checked::after {
-  background-color: #000;
+.leChoix .topCoolCheckbox:checked::after,
+.leChoixCSS .topCoolCheckbox:checked::after {
+  background-color: #fff;
   left: 13px;
 }
 
-.leChoix :focus:not(.focus-visible) {
+.leChoix :focus:not(.focus-visible),
+.leChoixCSS :focus:not(.focus-visible) {
   outline: 0;
 }
 
-.leChoix .topCoolCheckbox:checked:hover {
-  background-color: #734d49;
+.leChoix .topCoolCheckbox:checked:hover,
+.leChoixCSS .topCoolCheckbox:checked:hover {
+  background-color: #3d4746;
 }
 
-.leChoix .label { height: 14px; }
+.leChoix .label, .leChoixCSS .label { height: 14px; }
 
 #tirageBtn {
   background-color: #bf9180;
@@ -222,20 +238,6 @@ th, td {
 
 /** Responsiverie **/
 
-@media(min-width: 1389px) {
-  /** Tablette **/
-  .Principal {
-    width: 100%;
-    padding: 0;
-  }
-  
-  #formTirage {
-    margin-top: 30vh;
-    width: 60%;
-  }
-
-};
-
 @media(min-width: 768px) and (max-width: 1388px) {
   /** Tablette **/
   .Principal {
@@ -246,22 +248,26 @@ th, td {
   #formTirage {
     margin-top: 16vh;
   }
-
-};
+}
 
 @media(max-width: 767px) {
   /** Phone **/
+
   .Principal {
     width: 100%;
     padding: 0;
+    grid-template-areas:
+    "Entete"
+    "Contenu"
+    "BasPage";
+    grid-template-columns: 2.6fr;
   }
   
   #formTirage {
     margin-top: 10vh;
-    width: 100%;
+    width: 80%;
   }
-
-};
+}
 
 
 /*

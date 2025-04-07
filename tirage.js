@@ -4,7 +4,10 @@ resultmail = "";
 // Sélecteur de thèmes CSS
 
 document.addEventListener('DOMContentLoaded', function () {
-    const themeToggle = document.getElementById('SelectTheme'); // Utilisez le bon ID
+    const themeToggle = document.getElementById('SelectTheme');
+    
+    const Themesauve = localStorage.getItem('theme') || 'clair';
+    document.documentElement.setAttribute('data-theme', Themesauve);
   
     if (themeToggle) { // Vérifiez que l'élément existe
       themeToggle.addEventListener('change', function () {

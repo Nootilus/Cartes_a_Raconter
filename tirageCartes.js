@@ -113,7 +113,7 @@ function tirerCartes() {
             // Afficher le deck choisi
             const choixUnivers = document.createElement('h3');
             choixUnivers.className = "univers";
-            choixUnivers.innerHTML = '<img  class="pictos" src="svg/ico_'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />&nbsp;Dans l’univers '+ univers[0] +'&nbsp;<img  class="pictos" src="svg/ico_'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />';
+            choixUnivers.innerHTML = '<img class="pictos" src="svg/ico_'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />&nbsp;Dans l’univers '+ univers[0] +'&nbsp;<img  class="pictos" src="svg/ico_'+ univers[1] +'.svg" alt="'+ univers[1] +'" title="'+ univers[1] +'" />';
             resultDiv.appendChild(choixUnivers);
 
             // Tirer les cartes pour chaque personne
@@ -168,33 +168,29 @@ function tirerCartes() {
                 participantDiv.className = 'participant-block';
 
                 participantDiv.innerHTML = `
-                    <table>
-                        <tr>
-                            <td class="celParticipant celPicto"><img class="pictos" src="svg/participant.svg" alt="Participant" title="Le participant"></td>
-                            <td class="celTab celParticipant">${prenoms[i].toLowerCase()}</td>
-                            <td class="celPicto"><img class="pictos" src="svg/personnage.svg" alt="Personnage" title="Le personnage"></td>
-                            <td class="celTab">${rPerso}</td> <!-- Carte Personnage -->
-                            <td class="celPicto"><img class="pictos" src="svg/aspect.svg" alt="Aspect" title="Le caractère"></td>
-                            <td class="celTab">${rAspect}</td> <!-- Carte Aspect -->
-                        </tr>
-                        <tr>
-                            <td class="celPicto"><img class="pictos" src="svg/objet.svg" alt="Objet" title="L’objet"></td>
-                            <td class="celTab">${rObjet}</td> <!-- Carte Objet -->
-                            <td class="celPicto"><img class="pictos" src="svg/lieu.svg" alt="Lieu" title="Le lieu"></td>
-                            <td class="celTab">${rLieu}</td> <!-- Carte Lieu -->
-                            <td class="celPicto"><img class="pictos" src="svg/evenement.svg" alt="Événement" title="L'événement"></td>
-                            <td class="celTab">${rEvent}</td> <!-- Carte Événement -->
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td class="celChute celPicto"><img class="pictos" src="svg/chute.svg" alt="Fin de l’histoire" title="La fin de l’histoire"></td>
-                            <td class="celChute">${rChute}</td> <!-- Carte Fin d'histoire -->
-                        </tr>
-                    </table>
-                    <br/>
-                    <hr/>
-                    <br/>`;
+                <div class="grilleResultat">
+                    <div class="grilleTirage">
+                        <div class="image-cell celParticipant"><img class="pictos" src="svg/participant.svg" alt="Auteur" title="L’auteur"></div>
+                        <div class="text-cell celParticipant">${prenoms[i].toLowerCase()}</div>
+                        <div class="image-cell"><img class="pictos" src="svg/personnage.svg" alt="Personnage" title="Le personnage"></div>
+                        <div class="text-cell">${rPerso}</div>
+                        <div class="image-cell"><img class="pictos" src="svg/aspect.svg" alt="Aspect" title="Le caractère"></div>
+                        <div class="text-cell">${rAspect}</div>
+                        <div class="image-cell"><img class="pictos" src="svg/objet.svg" alt="Objet" title="L’objet"></div>
+                        <div class="text-cell">${rObjet}</div>
+                        <div class="image-cell"><img class="pictos" src="svg/lieu.svg" alt="Lieu" title="Le lieu"></div>
+                        <div class="text-cell">${rLieu}</div>
+                        <div class="image-cell"><img class="pictos" src="svg/evenement.svg" alt="Événement" title="L'événement"></div>
+                        <div class="text-cell">${rEvent}</div>
+                    </div>
+                    <div class="grilleChute">
+                        <div class="image-cell"><img class="pictos" src="svg/chute.svg" alt="Fin de l’histoire" title="La fin de l’histoire"></div>
+                        <div class="text-cell">${rChute}</div>
+                    </div>
+                </div>
+                <br/>
+                <hr/>
+                <br/>`;
 
                 resultDiv.appendChild(participantDiv);
 

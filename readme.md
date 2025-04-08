@@ -181,8 +181,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ### Journal de bord
 
 --- Version 0.8d
-- Ajout (pénible) d’un thème CSS sombre et d’un bouton basculant entre clair et sombre
-- Tentative de rendre le truc élastique (_responsive_) pour tablettes et smartphones.
+- Réécriture complète du système d’affichage des résultats. On passe d’une table naze à un système en `grid`
+  - Du coup, le CSS est plus clean
+  - Du coup le responsive est nickel…
 
 --- Version 0.8c
 - Après beauuuucoup trop de tests foireux, on écarte (momentanément ?) l’export PDF des résultats
@@ -245,10 +246,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Ajouter une page d’explications / mode d’emploi
 - [X] Amélioration de l’interface
   - [X] Proposer thème clair & sombre
+  - [ ] Mettre le thème sombre bien au point
 - [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [ ] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
   - [ ] Améliorer le système de mail
-- [ ] Responsiveness
+- [X] Responsiveness
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers
     - [X] Science-fiction

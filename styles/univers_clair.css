@@ -1,11 +1,26 @@
+/** Définition des variables couleurs **/
+:root {
+  --couleur_fond: #dafffa;
+  --fond_pur: #ffffff;
+  --couleur_texte: #3d4746; 
+  --couleur_titre: #556362;
+  --couleur_fondClair: #7ea18f;
+  --couleur_accent: #adc0b6;
+  --couleur_bordures: #c0f0e8;
+  --couleur_pictos: #ff0000;
+}
+
+
+/** Da CSS **/
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #dafffa;
+    background-color: var(--couleur_fond);
     margin: 0;
     padding: 0;
     display: grid;
     height: 100vh;
-    color: #3d4746
+    color: var(--couleur_texte)
 }
 
 .Principal {
@@ -41,7 +56,7 @@ body {
 #formTirage {
   display: block;
   width: 60%;
-  background-color: #fff;
+  background-color: var(--fond_pur);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -51,7 +66,7 @@ body {
   margin-right: auto;
 }
 
-h1 { color: #3d4746 }
+h1 { color: var(--couleur_titre) }
 h3 { text-align: center; }
 
 label { margin-right: 20px; }
@@ -59,7 +74,7 @@ label { margin-right: 20px; }
 input, select {
   margin-bottom: 10px;
   padding: 8px;
-  border: 1px solid #c0f0e8;
+  border: 1px solid var(--couleur_bordures);
   border-radius: 4px;
 }
 
@@ -110,7 +125,7 @@ input, select {
 
 .leChoix .topCoolCheckbox::after, 
 .leChoixCSS .topCoolCheckbox::after {
-  background-color: #fff;
+  background-color: var(--fond_pur);
   border-radius: 50%;
   content: "";
   height: 14px;
@@ -127,18 +142,18 @@ input, select {
 
 .leChoix .topCoolCheckbox:hover,
 .leChoixCSS .topCoolCheckbox:hover {
-  background-color: #c0f0e8;
+  background-color: var(--couleur_bordures);
   transition-duration: 0s;
 }
 
 .leChoix .topCoolCheckbox:checked,
 .leChoixCSS .topCoolCheckbox:checked {
-  background-color: #7ea18f;
+  background-color: var(--couleur_fondClair);
 }
 
 .leChoix .topCoolCheckbox:checked::after,
 .leChoixCSS .topCoolCheckbox:checked::after {
-  background-color: #fff;
+  background-color: var(--fond_pur);
   left: 13px;
 }
 
@@ -149,24 +164,22 @@ input, select {
 
 .leChoix .topCoolCheckbox:checked:hover,
 .leChoixCSS .topCoolCheckbox:checked:hover {
-  background-color: #3d4746;
+  background-color: var(--couleur_texte);
 }
 
 .leChoix .label, .leChoixCSS .label { height: 14px; }
 
 #tirageBtn {
-  background-color: #c0f0e8;
+  background-color: var(--couleur_bordures);
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.pictos {
-  padding: 0px 8px 3.5px 0px;
-  vertical-align: middle;
-  width: 20px;
-  height: 20px;
+.picto {
+  width: 64px;
+  height: 64px;
 }
 
 button {
@@ -193,45 +206,70 @@ button {
   margin: 0 auto; /* Centre horizontalement */
 }
 
-.participant-block { text-align: center; }
-
-#leParticipant { text-transform: capitalize; }
-
-table {
-  width: 100%; /* Remplit la largeur de la div parente */
-  border-collapse: collapse; /* Supprime les espaces entre les cellules */
-}
-
-th, td {
-  padding: 10px; /* Ajoute un espace autour du contenu des cellules */
-  border: 1px solid #ddd; /* Ajoute une bordure légère entre les cellules */
-}
-
-.celTab {
-  width: 34%;
-  word-wrap: break-word;  
-  text-align: left;
-  padding-left: 10px;
-}
-
-.celPicto { width: 40px; }
-
-.celPicto img {
-  width: 32px;
-  height: 32px;
-  cursor: help;
+.pictos {
+  /* padding: 0px 8px 3.5px 0px; */
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
 }
 
 .celParticipant {
-  background-color: #c0f0e8;
+  background-color: var(--couleur_bordures);
   text-transform: capitalize;
+  font-weight: 600;
 }
 
-.celChute { background-color: #adc0b6; }
+/*** Layout Grid pour affichage des résultats ***/
+
+/* Grille principale */
+.grilleResultat {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+/* Première grille : 6 colonnes et 2 lignes */
+.grilleTirage {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px 1fr 60px 1fr;
+  grid-template-rows: repeat(2, auto);
+  /* gap: 10px;  */
+  border: 1px solid #515151;
+}
+
+/* Deuxième grille : 2 colonnes et 1 ligne */
+.grilleChute {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 10px; 
+  border: 1px solid #515151;
+  background-color: var(--couleur_accent);
+}
+
+/* Cellules contenant du texte */
+.text-cell {
+  display: flex;
+  align-items: center; /* Centrage vertical */
+  padding-left: 6px; /* Marge à gauche de 6px */
+  text-align: left; /* Alignement du texte à gauche */
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+/* Cellules contenant des images */
+.image-cell img {
+  width: 60px;
+  height: 60px;
+  cursor: help;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  box-sizing: border-box;
+}
 
 /** Responsiverie **/
 
-@media(min-width: 768px) and (max-width: 1388px) {
+@media(min-width: 769px) and (max-width: 1388px) {
   /** Tablette **/
   .Principal {
     width: 100%;
@@ -243,7 +281,7 @@ th, td {
   }
 }
 
-@media(max-width: 767px) {
+@media(max-width: 768px) {
   /** Phone **/
 
   .Principal {
@@ -259,6 +297,14 @@ th, td {
   #formTirage {
     margin-top: 10vh;
     width: 80%;
+  }
+
+  .grilleTirage {
+    display: grid;
+    grid-template-columns: 60px 1fr ;
+    grid-template-rows: repeat(6, auto);
+    /* gap: 10px;  */
+    border: 1px solid #515151;
   }
 }
 

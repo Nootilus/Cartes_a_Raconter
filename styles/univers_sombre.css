@@ -3,11 +3,15 @@
   --couleur_fond: #000000;
   --fond_pur: #231832;
   --couleur_texte: #d9bfa9; 
+  --couleur_liens: #a96307;
   --couleur_titre: #b39e8c;
   --couleur_fondClair: #bf9180;
   --couleur_accent: #adc0b6;
   --couleur_bordures:  #bf9180;
+  --couleur_fond_resultats: #babdbc;
+  --couleur_texte_resultats: #3d4746; 
 }
+
 
 /** Da CSS **/
 
@@ -19,6 +23,15 @@ body {
   display: grid;
   height: 100vh;
   color: var(--couleur_texte)
+}
+
+a {
+  color: var(--couleur_liens);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline overline;
 }
 
 .Principal {
@@ -94,7 +107,7 @@ height: 30px;
 .leChoix .topCoolCheckbox,
 .leChoixCSS .topCoolCheckbox {
 appearance: none;
-background-color: #86dedb;
+background-color: var(--couleur_accent);
 border-radius: 72px;
 border-style: none;
 flex-shrink: 0;
@@ -175,11 +188,9 @@ border-radius: 4px;
 cursor: pointer;
 }
 
-.pictos {
-padding: 0px 8px 3.5px 0px;
-vertical-align: middle;
-width: 20px;
-height: 20px;
+.picto {
+width: 64px;
+height: 64px;
 }
 
 button {
@@ -206,75 +217,111 @@ width: 80%;
 margin: 0 auto; /* Centre horizontalement */
 }
 
-.participant-block { text-align: center; }
-
-#leParticipant { text-transform: capitalize; }
-
-table {
-width: 100%; /* Remplit la largeur de la div parente */
-border-collapse: collapse; /* Supprime les espaces entre les cellules */
-}
-
-th, td {
-padding: 10px; /* Ajoute un espace autour du contenu des cellules */
-border: 1px solid #ddd; /* Ajoute une bordure légère entre les cellules */
-}
-
-.celTab {
-width: 34%;
-word-wrap: break-word;  
-text-align: left;
-padding-left: 10px;
-}
-
-.celPicto { width: 40px; }
-
-.celPicto img {
-width: 32px;
-height: 32px;
-cursor: help;
+.pictos {
+/* padding: 0px 8px 3.5px 0px; */
+vertical-align: middle;
+width: 40px;
+height: 40px;
 }
 
 .celParticipant {
 background-color: var(--couleur_bordures);
 text-transform: capitalize;
+font-weight: 600;
 }
 
+/*** Layout Grid pour affichage des résultats ***/
+
+/* Grille principale */
+.grilleResultat {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  color: var(--couleur_texte_resultats);
+}
+
+/* Première grille : 6 colonnes et 2 lignes */
+.grilleTirage {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px 1fr 60px 1fr;
+  grid-template-rows: repeat(2, auto);
+  /* gap: 10px;  */
+  border: 1px solid var(--couleur_titre);
+  background-color: var(--couleur_fond_resultats);
+}
+
+/* Deuxième grille : 2 colonnes et 1 ligne */
+.grilleChute {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 10px; 
+  border: 1px solid var(--couleur_titre);
+  background-color: var(--couleur_bordures);
+}
+
+/* Cellules contenant du texte */
+.text-cell {
+  display: flex;
+  align-items: center; /* Centrage vertical */
+  padding-left: 6px; /* Marge à gauche de 6px */
+  text-align: left; /* Alignement du texte à gauche */
+  border-right: 1px solid var(--couleur_fondClair);
+  border-top: 1px solid var(--couleur_fondClair);
+}
+
+/* Cellules contenant des images */
+.image-cell img {
+  width: 60px;
+  height: 60px;
+  cursor: help;
+  border-right: 1px solid var(--couleur_fondClair);
+  border-top: 1px solid var(--couleur_fondClair);
+  padding: 10px;
+  box-sizing: border-box;
+}
+=======
 .celChute { background-color: var(--couleur_accent); }
 
 /** Responsiverie **/
 
-@media(min-width: 768px) and (max-width: 1388px) {
-/** Tablette **/
-.Principal {
-  width: 100%;
-  padding: 0;
+@media(min-width: 769px) and (max-width: 1388px) {
+  /** Tablette **/
+  .Principal {
+    width: 100%;
+    padding: 0;
+  }
+
+  #formTirage {
+    margin-top: 16vh;
+  }
 }
 
-#formTirage {
-  margin-top: 16vh;
-}
-}
+@media(max-width: 768px) {
+  /** Phone **/
 
-@media(max-width: 767px) {
-/** Phone **/
+  .Principal {
+    width: 100%;
+    padding: 0;
+    grid-template-areas:
+    "Entete"
+    "Contenu"
+    "BasPage";
+    grid-template-columns: 2.6fr;
+  }
 
-.Principal {
-  width: 100%;
-  padding: 0;
-  grid-template-areas:
-  "Entete"
-  "Contenu"
-  "BasPage";
-  grid-template-columns: 2.6fr;
-}
+  #formTirage {
+    margin-top: 10vh;
+    width: 80%;
+  }
 
-#formTirage {
-  margin-top: 10vh;
-  width: 80%;
+  .grilleTirage {
+    display: grid;
+    grid-template-columns: 60px 1fr ;
+    grid-template-rows: repeat(6, auto);
+    /* gap: 10px;  */
+    border: 1px solid var(--couleur_titre);
+  }
 }
-}
-
 
 /*
    _____ _______ _____   _____    

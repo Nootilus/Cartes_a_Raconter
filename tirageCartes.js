@@ -289,6 +289,6 @@ Version 0.8d — Avril 2025
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
 Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 
-Fichier : tirage.js
+Fichier : tirageCartes.js
 
 */

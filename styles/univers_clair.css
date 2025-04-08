@@ -66,6 +66,60 @@ body {
   margin-right: auto;
 }
 
+<<<<<<< HEAD
+=======
+.participant-block-test {
+  display: grid;
+  background-color: #7ea18f;
+
+  grid-template-columns: 55px 135px 55px 135px 55px 135px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px;
+  gap: 10px;
+  justify-items: center;
+
+  height: 120px;
+}
+
+.participant-chute-test {
+  display: grid;
+  background-color: #56ffa8;
+
+  grid-template-columns: 60px 540px;
+  grid-template-rows: 60px 60px;
+  grid-auto-flow: row;
+  justify-items: center;
+
+  height: 60px;
+}
+
+.participant-block-test .picto, .participant-chute-test .picto {
+  background-color: #ccc;
+  width: 60px;
+  height: 60px;
+}
+
+.participant-block-test .picto img, .participant-chute-test .picto img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.participant-block-test .auteur {
+  background-color: var(--couleur_bordures);
+}
+
+.participant-block-test .auteur > p {
+  font-weight: 600;
+}
+
+.participant-block-test p.resultatTxt,
+.participant-chute-test p.resultatTxt {
+  text-align: left;
+  margin: 0 auto;
+  padding: 6px 0 0 8px;
+}
+
+>>>>>>> 59a4ef748a6b1f5c1e18496f92d0c2204bda2cef
 h1 { color: var(--couleur_titre) }
 h3 { text-align: center; }
 
@@ -177,6 +231,16 @@ input, select {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+=======
+.pictos {
+  padding: 0px 8px 3.5px 0px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+
+>>>>>>> 59a4ef748a6b1f5c1e18496f92d0c2204bda2cef
 .picto {
   width: 64px;
   height: 64px;
@@ -219,6 +283,7 @@ button {
   font-weight: 600;
 }
 
+<<<<<<< HEAD
 /*** Layout Grid pour affichage des résultats ***/
 
 /* Grille principale */
@@ -266,6 +331,9 @@ button {
   padding: 10px;
   box-sizing: border-box;
 }
+=======
+.celChute { background-color: var(--couleur_accent); }
+>>>>>>> 59a4ef748a6b1f5c1e18496f92d0c2204bda2cef
 
 /** Responsiverie **/
 

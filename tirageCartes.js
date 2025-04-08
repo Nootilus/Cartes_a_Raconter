@@ -168,6 +168,7 @@ function tirerCartes() {
                 participantDiv.className = 'participant-block';
 
                 participantDiv.innerHTML = `
+<<<<<<< HEAD:tirageCartes.js
                 <div class="grilleResultat">
                     <div class="grilleTirage">
                         <div class="image-cell celParticipant"><img class="pictos" src="svg/participant.svg" alt="Auteur" title="L’auteur"></div>
@@ -191,6 +192,35 @@ function tirerCartes() {
                 <br/>
                 <hr/>
                 <br/>`;
+=======
+                    <table>
+                        <tr>
+                            <td class="celParticipant celPicto"><svg class="picticone"><use href="icones.svg#Participant"></use></svg></td>
+                            <td class="celTab celParticipant">${prenoms[i].toLowerCase()}</td>
+                            <td class="celPicto"><img class="pictos" src="svg/personnage.svg" alt="Personnage" title="Le personnage"></td>
+                            <td class="celTab">${rPerso}</td> <!-- Carte Personnage -->
+                            <td class="celPicto"><img class="pictos" src="svg/aspect.svg" alt="Aspect" title="Le caractère"></td>
+                            <td class="celTab">${rAspect}</td> <!-- Carte Aspect -->
+                        </tr>
+                        <tr>
+                            <td class="celPicto"><img class="pictos" src="svg/objet.svg" alt="Objet" title="L’objet"></td>
+                            <td class="celTab">${rObjet}</td> <!-- Carte Objet -->
+                            <td class="celPicto"><img class="pictos" src="svg/lieu.svg" alt="Lieu" title="Le lieu"></td>
+                            <td class="celTab">${rLieu}</td> <!-- Carte Lieu -->
+                            <td class="celPicto"><img class="pictos" src="svg/evenement.svg" alt="Événement" title="L'événement"></td>
+                            <td class="celTab">${rEvent}</td> <!-- Carte Événement -->
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <td class="celChute celPicto"><img class="pictos" src="svg/chute.svg" alt="Fin de l’histoire" title="La fin de l’histoire"></td>
+                            <td class="celChute">${rChute}</td> <!-- Carte Fin d'histoire -->
+                        </tr>
+                    </table>
+                    <br/>
+                    <hr/>
+                    <br/>`;
+>>>>>>> 59a4ef748a6b1f5c1e18496f92d0c2204bda2cef:tirage.js
 
                 resultDiv.appendChild(participantDiv);
 

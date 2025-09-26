@@ -223,10 +223,11 @@ Grâce à l’incroyable Qodo :
 - [ ] Ajouter une page d’explications / mode d’emploi
 - [X] Amélioration de l’interface
   - [X] Proposer thème clair & sombre
-  - [ ] Mettre le thème sombre bien au point
+  - [X] Mettre le thème sombre bien au point
+  - [X] Persistence duL choix du thème 
 - [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
-  - [X] Améliorer le système de mail → **Export PDF ???**
+  - [X] Améliorer le système de mail → **Export PDF**
 - [ ] Responsiveness
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers

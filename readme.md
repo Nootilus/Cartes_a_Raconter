@@ -5,7 +5,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![GPL3 License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
@@ -144,6 +143,7 @@ This is an example of how to list things you need to use the software and how to
 
 _Note_ : Le choix des cartes uniques ou clonées détermine si le tirage se comporte de manière réaliste ou non. Dans le cas réaliste –à l’image d’un véritable jeu de cartes– lorsqu’une carte est tirée, elle ne peut plus se trouver dans le paquet restant à distribuer. Chaque carte est alors unique. Dans le cas contraire, les cartes sont _clonables_, c’est à dire que peu importe si une carte a été tirée, elle reste dans la liste des cartes disponibles.
 
+<!--
 ### S’emparer du projet
 
 ===> **À faire** :
@@ -153,7 +153,7 @@ _Note_ : Le choix des cartes uniques ou clonées détermine si le tirage se comp
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
+-->
 <!--
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
@@ -220,18 +220,28 @@ Grâce à l’incroyable Qodo :
 
 ### Carnet de route
 
+- [ ] Ajouter une page d’explications / mode d’emploi
 - [X] Amélioration de l’interface
+  - [X] Proposer thème clair & sombre
+  - [ ] Mettre le thème sombre bien au point
 - [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
   - [X] Améliorer le système de mail → **Export PDF ???**
 - [ ] Responsiveness
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers
-    - [ ] Fantasy
+    - [X] Science-fiction
+    - [X] Steampunk
+    - [X] Fantasy
     - [X] Horreur
-    - [ ] Polar
-    - [ ] Cyberpunk (thanks E-Mae)
-    - [ ] Lovecraftien (merci Lou)
+    - [X] Polar
+    - [ ] Cyberpunk (en cours)
+      - Manquent 20 fins
+    - [ ] Lovecraftien (merci Lou) (en cours)
+      - Manquent 25 fins
+    - [ ] Quotidien (en cours)
+      - Manquent 50 fins
+    - [ ] Far West
 
 Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour une (éventuelle) liste de suggestions et améliorations.
 
@@ -272,7 +282,7 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 
 * [Olivier Gechter](https://gechter.org/blog/) – Très tôt beta-testeur
 * [Les participants de la Scribulerie](https://scribulerie.nootilus.com/) – Les cobayes consentants
-* [E-Mae](#) – Création de la liste Cyberpunk
+* E-Mae pour le deck Cyberpunk
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 

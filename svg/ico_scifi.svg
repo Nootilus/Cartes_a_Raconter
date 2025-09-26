@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Pictos_Cartes_à_Histoires" data-name="Pictos Cartes à Histoires" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path id="Scifi" class="cls-1" d="M28.59,18.8v-5.6h-2.8v-2.8h-2.8v-2.8h2.8v-2.8h-5.6v5.6h-8.39v-5.6h-5.6v2.8h2.8v2.8h-2.8v2.8h-2.8v5.6H.61v5.6h2.8v-2.8h2.8v5.6h5.6v-2.8h-2.8v-2.8h13.99v2.8h-2.8v2.8h5.6v-5.6h2.8v2.8h2.8v-5.6h-2.8ZM11.8,16h-2.8v-2.8h2.8v2.8ZM22.99,16h-2.8v-2.8h2.8v2.8Z"/>
+</svg>

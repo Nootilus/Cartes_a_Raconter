@@ -6,7 +6,7 @@
     <meta property="og:locale" content="fr_FR" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Univers à la Carte" />
-    <meta property="og:description" content="Générateur aléatoire d’éléments narratifs." />
+    <meta property="og:description" content="Générateur aléatoire d'éléments narratifs." />
     <meta property="og:url" content="https://www.nootilus.com/test/cartes/" />
     <meta property="og:site_name" content="Le Nootilus – Vincent Corlaix" />
     <meta property="og:image" content="https://www.nootilus.com/medias/scribulerie/noot_scribulerie.png" />
@@ -18,14 +18,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Univers à la Carte</title>
     <link rel="stylesheet" href="joliture.css">
-    <script src="tirage.js"></script>
+    <link id="lienTheme" rel="stylesheet" href="styles/univers_clair.css">
+    <script src="tirageCartes.js"></script>
+
+    
 </head>
 <body>
 
     <div class="Principal">
         <div class="Entete">
             <h1>Univers à la Carte</h1>
-            <h3>Générateur aléatoire d’éléments narratifs</h3>
+            <h3>Générateur aléatoire d'éléments narratifs</h3>
+            <div class="leChoixCSS">
+                <input type="checkbox" id="SelectTheme" class="topCoolCheckbox" name="themeSelect" />
+                <label for="SelectTheme"> Thème sombre</label>
+            </div>
         </div>
 
         <div class="Contenu">
@@ -40,7 +47,7 @@
                 </select>
 
                 <div class="leChoix">
-                    <input type="checkbox" id="cartesUniques" class="topCoolCheckbox" name="cartesUniques" value=true checked>
+                    <input type="checkbox" id="cartesUniques" class="topCoolCheckbox" name="cartesUniques" value="true" checked>
                     <label for="cartesUniques"> Cartes uniques</label><br>
                 </div>
         
@@ -59,9 +66,10 @@
                     <!-- Tableaux des résultats remplis ici par le JS -->
                 </div>
             </div>
-        
+
             <button id="reboot" onclick="reinitialiserPage()">Recommencer</button>
             <button id="goMail" onclick="envoyerMail()">Envoyer les résultats</button>
+            <button id="genPDF" onclick="genererPDF()" style="display:none;">Créer le PDF</button>
         </div>
 
         <div class="BasPage">
@@ -87,7 +95,7 @@
         }
 
         // Appeler la fonction pour créer les champs de saisie lors du chargement de la page
-        ajouterChampsPrenom();
+        document.addEventListener('DOMContentLoaded', ajouterChampsPrenom);
 
         // Mettre à jour les champs de saisie lorsqu'on change le nombre de personnes
         document.getElementById('nombreDePersonnes').addEventListener('input', ajouterChampsPrenom);
@@ -104,7 +112,7 @@
   \_____(_)|_(_)\_____(_)_|  \_(_)
     Générateur de Tirages de Cartes à Raconter©™®                            
                                   
-Version 0.7d — Décembre 2023
+Version 1.0 — Septembre 2025
 Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
 Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
 

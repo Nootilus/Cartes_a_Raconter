@@ -1,0 +1,356 @@
+/** Définition des variables couleurs **/
+:root {
+  --couleur_fond: #dafffa;
+  --fond_pur: #ffffff;
+  --couleur_texte: #3d4746;
+  --couleur_liens: #686fa0;
+  --couleur_titre: #556362;
+  --couleur_fondClair: #7ea18f;
+  --couleur_accent: #adc0b6;
+  --couleur_bordures: #c0f0e8;
+}
+
+
+/** Da CSS **/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--couleur_fond);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    color: var(--couleur_texte)
+}
+
+a {
+  color: var(--couleur_liens);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline overline;
+}
+
+.Principal {
+  display: grid;
+  grid-template-columns: 0.2fr 2.2fr 0.2fr;
+  grid-template-rows: 0.3fr 2.4fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Entete Entete Entete"
+    ". Contenu ."
+    "BasPage BasPage BasPage";
+}
+
+.Entete {
+  grid-area: Entete;
+  justify-self: center; 
+  align-self: center;
+  text-align: center;
+}
+
+.BasPage {
+  grid-area: BasPage;
+  justify-self: center; 
+  align-self: center; 
+  text-align: center;
+}
+
+.Contenu {
+  grid-area: Contenu;
+}
+
+#formTirage {
+  display: block;
+  width: 60%;
+  background-color: var(--fond_pur);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 { color: var(--couleur_titre) }
+h3 { text-align: center; }
+
+label { margin-right: 20px; }
+
+input, select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid var(--couleur_bordures);
+  border-radius: 4px;
+}
+
+#cartesUniques {
+  margin-right: 10px;
+  flex-direction: row;
+}
+
+.leChoix {
+  height: 30px;
+  padding: 10px;
+}
+
+.leChoixCSS {
+  height: 30px;
+  /*padding: 10px;*/
+}
+
+.leChoix .topCoolCheckbox,
+.leChoixCSS .topCoolCheckbox {
+  appearance: none;
+  background-color: var(--couleur_accent);
+  border-radius: 72px;
+  border-style: none;
+  flex-shrink: 0;
+  height: 20px;
+  margin: 0;
+  position: relative;
+  width: 30px;
+}
+
+.leChoix .topCoolCheckbox::before,
+.leChoixCSS .topCoolCheckbox::before {
+  bottom: -6px;
+  content: "";
+  left: -6px;
+  position: absolute;
+  right: -6px;
+  top: -6px;
+}
+
+.leChoix .topCoolCheckbox,
+.leChoix .topCoolCheckbox::after,
+.leChoixCSS .topCoolCheckbox,
+.leChoixCSS .topCoolCheckbox::after {
+  transition: all 100ms ease-out;
+}
+
+.leChoix .topCoolCheckbox::after, 
+.leChoixCSS .topCoolCheckbox::after {
+  background-color: var(--fond_pur);
+  border-radius: 50%;
+  content: "";
+  height: 14px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  width: 14px;
+}
+
+.leChoix input[type=checkbox], 
+.leChoixCSS input[type=checkbox] {
+  cursor: default;
+}
+
+.leChoix .topCoolCheckbox:hover,
+.leChoixCSS .topCoolCheckbox:hover {
+  background-color: var(--couleur_bordures);
+  transition-duration: 0s;
+}
+
+.leChoix .topCoolCheckbox:checked,
+.leChoixCSS .topCoolCheckbox:checked {
+  background-color: var(--couleur_fondClair);
+}
+
+.leChoix .topCoolCheckbox:checked::after,
+.leChoixCSS .topCoolCheckbox:checked::after {
+  background-color: var(--fond_pur);
+  left: 13px;
+}
+
+.leChoix :focus:not(.focus-visible),
+.leChoixCSS :focus:not(.focus-visible) {
+  outline: 0;
+}
+
+.leChoix .topCoolCheckbox:checked:hover,
+.leChoixCSS .topCoolCheckbox:checked:hover {
+  background-color: var(--couleur_texte);
+}
+
+.leChoix .label, .leChoixCSS .label { height: 14px; }
+
+#tirageBtn {
+  background-color: var(--couleur_bordures);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.picto {
+  width: 64px;
+  height: 64px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#reboot, #goMail, #goPDF {
+  margin: 10px auto;
+  display: none;
+}
+
+/* Style pour les champs de saisie des prénoms */
+.prenom-input {
+  margin: 5px;
+  padding: 5px;
+}
+
+#result {
+  display: none;
+  width: 80%;
+  margin: 0 auto; /* Centre horizontalement */
+}
+
+.pictos {
+  /* padding: 0px 8px 3.5px 0px; */
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+}
+
+.celParticipant {
+  background-color: var(--couleur_bordures);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/*** Layout Grid pour affichage des résultats ***/
+
+/* Grille principale */
+.grilleResultat {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+
+/* Première grille : 6 colonnes et 2 lignes */
+.grilleTirage {
+  display: grid;
+  grid-template-columns: 60px 1fr 60px 1fr 60px 1fr;
+  grid-template-rows: repeat(2, auto);
+  /* gap: 10px;  */
+  border: 1px solid var(--couleur_titre);
+}
+
+/* Deuxième grille : 2 colonnes et 1 ligne */
+.grilleChute {
+  display: grid;
+  grid-template-columns: 60px auto;
+  gap: 10px; 
+  border: 1px solid var(--couleur_titre);
+  background-color: var(--couleur_accent);
+}
+
+/* Cellules contenant du texte */
+.text-cell {
+  display: flex;
+  align-items: center; /* Centrage vertical */
+  padding-left: 6px; /* Marge à gauche de 6px */
+  text-align: left; /* Alignement du texte à gauche */
+  border-right: 1px solid var(--couleur_fondClair);
+  border-top: 1px solid var(--couleur_fondClair);
+}
+
+/* Cellules contenant des images */
+.image-cell img {
+  width: 60px;
+  height: 60px;
+  cursor: help;
+  border-right: 1px solid var(--couleur_fondClair);
+  border-top: 1px solid var(--couleur_fondClair);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.celChute { background-color: var(--couleur_accent); }
+
+.resultmail {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  width:40mm;
+  margin:5mm;
+  font-size: 1mm !important; /* Équivalent à ~9px (1px ≈ 0.353mm) */
+  font-family: Arial, sans-serif; /* Police standard */
+  -webkit-print-color-adjust: exact;
+}
+
+.sautLignePDF {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  page-break-after: always !important;
+  break-after: page !important;
+}
+
+/** Responsiverie **/
+
+@media(min-width: 769px) and (max-width: 1388px) {
+  /** Tablette **/
+  .Principal {
+    width: 100%;
+    padding: 0;
+  }
+  
+  #formTirage {
+    margin-top: 16vh;
+  }
+}
+
+@media(max-width: 768px) {
+  /** Phone **/
+
+  .Principal {
+    width: 100%;
+    padding: 0;
+    grid-template-areas:
+    "Entete"
+    "Contenu"
+    "BasPage";
+    grid-template-columns: 2.6fr;
+  }
+  
+  #formTirage {
+    margin-top: 10vh;
+    width: 80%;
+  }
+
+  .grilleTirage {
+    display: grid;
+    grid-template-columns: 60px 1fr ;
+    grid-template-rows: repeat(6, auto);
+    /* gap: 10px;  */
+    border: 1px solid var(--couleur_titre);
+  }
+}
+
+
+/*
+   _____ _______ _____   _____    
+  / ____|__   __/ ____| |  __ \   
+ | |  __   | | | |      | |__) |  
+ | | |_ |  | | | |      |  _  /   
+ | |__| |_ | |_| |____ _| | \ \ _ 
+  \_____(_)|_(_)\_____(_)_|  \_(_)
+    Générateur de Tirages de Cartes à Raconter©™®                            
+                                  
+Version 1.0 — Septembre 2025
+Créé par Vincent Corlaix avec de gros coups de main de ChatGPT 3.5
+Github du projet : https://github.com/Nootilus/Cartes_a_Raconter
+
+Fichier : univers_clair.css
+
+*/

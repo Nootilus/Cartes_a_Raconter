@@ -23,7 +23,7 @@
     <a href="https://github.com/Nootilus/Cartes_a_Raconter"><strong>La doc »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">Accès à la démo</a>
+    <a href="https://nootilus.com/test/cartes/">Accès à la démo</a>
     ·
     <a href="https://github.com/Nootilus/Cartes_a_Raconter/issues">Relever un bug</a>
     ·
@@ -69,6 +69,7 @@ Pour le moment, les univers disponibles sont :
 - Science-fiction
 - Steampunk
 - Horreur
+- Policier (non complet)
 
 À l’origine de cette idée se trouve le jeu de société « _[Il était une fois](https://fr.wikipedia.org/wiki/Il_%C3%A9tait_une_fois%E2%80%A6_(jeu))_ » édité par _Asmodée_. J’utilise ce jeu comme source d’éléments narratifs durant mes ateliers d’écriture. Les participants adorent, mais m’ont fait la remarque que le jeu de base était un peu trop orienté _contes de fées_ et qu’à l’usage il devenait répétitif.
 
@@ -86,8 +87,9 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 * [![vscodium][vscodium-shield]][vscodium-url]
 * [![chatGTP][chatGTP-shield]][chatGTP-url]
+* [![Qodo][qodo-shield]][qodo-url]
 
-Ce mini-site a été codé avec [VSCodium](https://vscodium.com/) et un soutien inconditionnel de _ChatGPT 3.5_.
+Ce mini-site a été codé avec [VSCodium](https://vscodium.com/), avec  un premier  soutien inconditionnel de _ChatGPT 3.5_, mais surtout un gros travail de correction et d’amélioration fourni par _Qodo / ChatGPT 5_.
 
 <p align="right">(<a href="#readme-top">Retour en haut</a>)</p>
 
@@ -129,7 +131,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Utilisation
 
-### Fonctionnement du site en version v0.7
+### Fonctionnement du site en version v1.0
 
 1. Dans le menu déroulant, on choisit le set de cartes à utiliser.
 2. On choisi si les cartes sont uniques (réaliste) ou clonées (infinies)
@@ -138,13 +140,14 @@ This is an example of how to list things you need to use the software and how to
 5. On clique sur le bouton « `Tirer les cartes` »
 6. Le site génère le tirage.
 7. Cliquer sur « `Recommencer` » pour réinitialiser le système 
-8. On peut éventuellement cliquer sur « `Envoyer les résultats` » pour obtenir une trace écrite des tirages
+8. Cliquer sur « `Créer le PDF` » pour générer un fichier PDF en texte seulement contenant les tirages.
 
 _Note_ : Le choix des cartes uniques ou clonées détermine si le tirage se comporte de manière réaliste ou non. Dans le cas réaliste –à l’image d’un véritable jeu de cartes– lorsqu’une carte est tirée, elle ne peut plus se trouver dans le paquet restant à distribuer. Chaque carte est alors unique. Dans le cas contraire, les cartes sont _clonables_, c’est à dire que peu importe si une carte a été tirée, elle reste dans la liste des cartes disponibles.
 
 ### S’emparer du projet
 
-===> À faire :
+===> **À faire** :
+
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
@@ -163,6 +166,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 ## Fait & À faire
 
 ### Journal de bord
+
+--- Version 1.0
+Grâce à l’incroyable Qodo :
+- Un million de nettoyages et corrections du code d’origine
+- Une bascule de thème clair/sombre fonctionnelle et persistante
+- Un export propre, simple et fonctionnel de la génération du fichier PDF des résultats
 
 --- Version 0.8b
 - Déplacement des decks de cartes dans un dossier `decks/`
@@ -187,7 +196,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 --- Version 0.6
 - Ajout du choix du système de tirage :
   - Cartes uniques : chaque carte est unique au tirage, elle ne peut apparaitre qu’une fois par tirage (choix par défaut)
-  - Cartes clones : Une même carte peut être tirée plusieurs fois dans le même tirage
+  - Cartes clones : Une même carte peut apparaitre plusieurs fois dans le même tirage
 
 --- Version 0.5
 - Ajout de texte d’aide au survol des pictos
@@ -214,7 +223,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [X] Amélioration de l’interface
 - [x] Choix pour «cloner» les cartes (différents participants peuvent recevoir la même carte, ou non)
 - [x] Envoi d’un mail récapitulatif du tirage (pour suivi atelier)
-  - [ ] Améliorer le système de mail
+  - [X] Améliorer le système de mail → **Export PDF ???**
 - [ ] Responsiveness
 - [ ] Possibilité de mélanger les univers ?
 - [ ] Création et ajout des autres univers
@@ -233,7 +242,7 @@ Voir la [page issues](https://github.com/Nootilus/Cartes_a_Raconter/issues) pour
 
 Ce projet est composé à peu près de :
 - 10 à 20 % de travail fourni par votre serviteur
-- 80 à 90 % de code généré par l’ami ChatGPT 3.5
+- 80 à 90 % de code généré par l’ami ChatGPT 3.5 & Qodo
 
 La majorité des pictos ont été créés par [_Icon54_](https://thenounproject.com/icon54app/), proposés sur le site [**Noun Project**](https://thenounproject.com/browse/collection-icon/basic-solid-icons-62704/?p=1) dans la collection correspondante.
 
@@ -273,6 +282,8 @@ Lien du projet : [https://github.com/Nootilus/Cartes_a_Raconter](https://github.
 [vscodium-url]: https://vscodium.com/
 [chatGTP-shield]: https://img.shields.io/badge/Chat-GTP-orange
 [chatGTP-url]: https://chat.openai.com/
+[qodo-shield]: https://img.shields.io/badge/Qodo-Gen-green
+[qodo-url]: https://www.qodo.ai/
 
 [contributors-shield]: https://img.shields.io/github/contributors/Nootilus/Cartes_a_Raconter.svg?style=for-the-badge
 [contributors-url]: https://github.com/Nootilus/Cartes_a_Raconter/graphs/contributors
